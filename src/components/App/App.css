@@ -22,6 +22,8 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Righteous', cursive;
   font-weight: 400;
+  background-color: #333;
+  color: white;
 }
 img,
 picture,
@@ -49,4 +51,35 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.app {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-view {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.main-item {
+  margin: 0.5rem 0;
 }
