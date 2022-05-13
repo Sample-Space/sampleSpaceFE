@@ -22,7 +22,7 @@ const App = () => {
           allowfullscreen
         ></iframe>
         <Link to='/play'>
-          <button>Let's Jam</button>
+          <button className='main-item'>Let's Jam</button>
         </Link>
       </main>
     </div>
