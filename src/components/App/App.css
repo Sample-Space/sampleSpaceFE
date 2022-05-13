@@ -15,18 +15,21 @@
 * {
   margin: 0;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Righteous', cursive;
   font-weight: 400;
-  background-color: #333;
+  background-color: rgb(31, 31, 31);
   color: white;
 }
+
 img,
 picture,
 video,
@@ -35,12 +38,14 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -50,6 +55,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 #root,
 #__next {
   isolation: isolate;
