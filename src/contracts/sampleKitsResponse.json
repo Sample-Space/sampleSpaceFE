@@ -1,0 +1,4 @@
+{
+  "__endpoint__": "/kits/",
+  "kits": ["kit1.name", "kit2.name", "kit3.name"]
+}
