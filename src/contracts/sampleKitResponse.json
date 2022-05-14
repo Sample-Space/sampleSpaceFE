@@ -1,4 +1,6 @@
+
 {
+  "__endpoint__": "/kits/{name}",
   "kit": {
     "name": "string",
     "elements": {
@@ -51,7 +53,5 @@
         "info_url": "string"
       }
     }
-  },
-
-  "kits": ["name1", "name2", "..."]
+  }
 }
