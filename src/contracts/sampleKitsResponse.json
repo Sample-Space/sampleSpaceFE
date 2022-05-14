@@ -1,0 +1,6 @@
+{
+  "endpoint": "/kits/",
+  "response": {
+    "kits": ["kit1.name", "kit2.name", "kit3.name"]
+  },
+}

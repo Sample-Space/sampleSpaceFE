@@ -1,0 +1,58 @@
+{
+  "endpoint": "/kits/{kit_name}"
+  "response": {
+    "kit": {
+      "name": "string",
+      "elements": {
+        "kick": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "snare": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "hh_closed": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "hh_open": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "melody": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "texture": {
+          "name": "string",
+          "source": "string",
+          "sound": "string",
+          "thumbnail": "string",
+          "description": "string",
+          "info_url": "string"
+        }
+      }
+    }
+  }
+}
