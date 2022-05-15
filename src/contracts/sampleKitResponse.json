@@ -3,55 +3,73 @@
   "response": {
     "kit": {
       "name": "string",
+      "id": "integer"
       "elements": {
         "kick": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
         },
         "snare": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
         },
         "hh_closed": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
         },
         "hh_open": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
         },
         "melody": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
         },
         "texture": {
           "name": "string",
-          "source": "string",
-          "sound": "string",
-          "thumbnail": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
-        }
+        },
+        "one_shot_1": {
+          "name": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "one_shot_2": {
+          "name": "string",
+          "source_name": "string",
+          "sound_url": "string",
+          "thumbnail_url": "string",
+          "description": "string",
+          "info_url": "string"
+        },
+        "groove_url" : "string"
       }
     }
   }
