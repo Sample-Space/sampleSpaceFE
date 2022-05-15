@@ -3,7 +3,7 @@
   "response": {
     "kit": {
       "name": "string",
-      "id": "integer"
+      "id": "integer",
       "elements": {
         "kick": {
           "name": "string",
