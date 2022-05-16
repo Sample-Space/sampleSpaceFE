@@ -9,7 +9,7 @@ const Play = () => {
       <header>
         <img src={logo} alt="Sample Space logo" />
       </header>
-      <main class="main-container">
+      <main className="main-container">
         <div className="pad-container">
           <DrumPad />
           <DrumPad />
