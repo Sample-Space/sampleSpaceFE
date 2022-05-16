@@ -1,7 +1,17 @@
-import { Song, Track, Instrument, Effect } from 'reactronica'
+import { Song, Track, Instrument, Effect } from "reactronica";
+import logo from '../../assets/images/sample-space-logo.svg'
+import DrumPad from "../DrumPad/DrumPad";
 
 const Play = () => {
-  return <div>Play</div>
-}
+  
+  return (
+    <>
+      <header>
+        <img src={logo} alt="Sample Space logo" />
+      </header>
+      <div className="play-container"></div>
+    </>
+  );
+};
 
-export default Play
+export default Play;
