@@ -1,6 +1,6 @@
 import React from 'react'
 import { Song, Track, Instrument } from 'reactronica';
-import kick from "../../assets/samples/kick.mp3"
+import kick from "../../assets/samples/kick.mp3";
 import "./DrumPad.css"
 
 const DrumPad = ({ padId }) => {
