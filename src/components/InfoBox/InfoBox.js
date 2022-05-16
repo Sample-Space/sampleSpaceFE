@@ -1,6 +1,6 @@
 import '/InfoBox.css'
 
-InfoBox = () => {
+const InfoBox = () => {
   return (
     <>
       <section className='info-box'>
