@@ -1,18 +1,15 @@
 import './DrumPadButton.css'
 
-const DrumPadButton = ( {setNotes} ) => {
+const DrumPadButton = ({ setNotes, note, id, imgSrc }) => {
   return (
     <>
       <button
         className='drum-pad'
-        id='1'
-        onMouseDown={() => setNotes([{ name: 'C3' }])}
+        id={id}
+        onMouseDown={() => setNotes([{ name: note }])}
         onMouseUp={() => setNotes(null)}
       >
-        <img
-          className='pad-image'
-          src='https://images.theconversation.com/files/394/original/See_Explanation._Clicking_on_the_picture_will_download_the_highest_resolution_version_available.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop'
-        />
+        <img className='pad-image' src={imgSrc} />
       </button>
     </>
   )
