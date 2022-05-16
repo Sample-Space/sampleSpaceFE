@@ -11,16 +11,7 @@ const Play = () => {
         <img src={logo} alt='Sample Space logo' />
       </header>
       <main className='main-container'>
-        <div className='pad-container'>
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-          <DrumPad />
-        </div>
+        <DrumPad />
         <InfoBox />
       </main>
     </>

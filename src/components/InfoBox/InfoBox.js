@@ -1,4 +1,4 @@
-import '/InfoBox.css'
+import './InfoBox.css'
 
 const InfoBox = () => {
   return (
