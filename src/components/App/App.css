@@ -3,6 +3,9 @@
 #root {
   font-family: 'Chakra Petch', sans-serif;
   font-family: 'Righteous', cursive;
+  --nasa-orange: #fc3d21;
+  --nasa-blue: #0b3d91;
+  --border-rad: 0.5rem;
 }
 
 *,
@@ -12,19 +15,23 @@
 }
 * {
   margin: 0;
+  /* border: 1px solid red; */
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Righteous', cursive;
   font-weight: 400;
-  background-color: #333;
+  background-color: rgb(31, 31, 31);
   color: white;
 }
+
 img,
 picture,
 video,
@@ -33,12 +40,14 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -48,6 +57,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 #root,
 #__next {
   isolation: isolate;
@@ -77,9 +87,21 @@ header {
   align-items: center;
   padding: 0.5rem;
   border: 2px solid black;
-  border-radius: 0.5rem;
+  border-radius: var(--border-rad);
 }
 
 .main-item {
   margin: 0.5rem 0;
+}
+
+.nav-button {
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  border-radius: var(--border-rad);
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  box-shadow: 0 0 2px white;
 }

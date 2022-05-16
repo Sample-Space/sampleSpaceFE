@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 49vw;
+  height: 47vh;
+  align-items: center;
+}
+
+.info-screen {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 47vh;
+  background-color: #fc3e2194;
+}
