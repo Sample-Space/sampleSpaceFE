@@ -4,7 +4,7 @@ import kick from "../../assets/samples/kick.mp3"
 import "./DrumPad.css"
 
 const DrumPad = ({ padId }) => {
-
+  const [notes, setNotes] = React.useState(null);
   return (
     <>
     <button className="drum-pad" id="1"
