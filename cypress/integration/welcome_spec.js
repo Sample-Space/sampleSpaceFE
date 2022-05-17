@@ -8,4 +8,9 @@ describe('Sample Space', () => {
       .get('header h2')
         .contains('an educational drum machine featuring samples from across the universe')
   })
+
+  it('Should load the video player', () => {
+    cy.get('iframe')
+        .should('have.attr', 'src', 'https://www.youtube.com/embed/dokLwszdUgY')
+  })
 })
