@@ -3,5 +3,6 @@ describe('Sample Space', () => {
     cy.visit('localhost:3000')
       .get('header img')
       .get('header h2')
+      .get('main button')
   })
 })
