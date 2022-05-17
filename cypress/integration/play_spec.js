@@ -21,4 +21,18 @@ describe('/play endpoint', () => {
         .parent().click()
       })
  })
+
+ it('Should have an info box', () => {
+   cy.get('.info-box h2')
+    .contains('Info Goes Here')
+  .next()
+    .contains('basic summary here')
+  .get('.info-box button')
+    .contains('Tell me more!')
+    .click({force: true})
+  .next()
+    .contains('Tempo')
+  .next()
+    .contains('120')
+ })
 })
