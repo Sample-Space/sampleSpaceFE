@@ -7,7 +7,9 @@ const App = () => {
     <div className='app'>
       <header>
         <img src={logo} alt='Sample Space logo' />
-        <h2>an educational drum machine featuring samples from across the universe</h2>
+        <h2>
+          an educational drum machine featuring samples from across the universe
+        </h2>
       </header>
       <main className='main-view'>
         <h3 className='main-item'>Learn How to Play:</h3>
