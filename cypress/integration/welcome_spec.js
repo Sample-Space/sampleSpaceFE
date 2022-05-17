@@ -10,7 +10,17 @@ describe('Sample Space', () => {
   })
 
   it('Should load the video player', () => {
-    cy.get('iframe')
+    cy.get('.main-item')
+      .contains('Learn How to Play:')
+    .get('main button')
+      .contains(`Let's Jam`)
+    .get('iframe')
         .should('have.attr', 'src', 'https://www.youtube.com/embed/dokLwszdUgY')
+  })
+
+  it('Should have a button that takes the user to the /play endpoint', () => {
+    cy.get('main button')
+      .click()
+    cy.url().should('eq', 'http://localhost:3000/play')
   })
 })
