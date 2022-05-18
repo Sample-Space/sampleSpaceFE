@@ -1,3 +1,5 @@
+import { sampleKit } from '../../src/sampleKit.js';
+
 describe('/play endpoint', () => {
  beforeEach('Visit the page', () => {
    cy.visit('http://localhost:3000/play')
@@ -9,16 +11,22 @@ describe('/play endpoint', () => {
  })
 
  it('Should have 8 clickable buttons', () => {
+   const urls = sampleKit.kit1.map(element => element.img)
    let buttons = cy.get('.pad-container')
 
     buttons.children()
       .should('have.length', 8)
 
     buttons.each(button => {
-      cy.wrap(button).children()
-        .first()
-        .should('have.attr', 'src', 'https://images.theconversation.com/files/394/original/See_Explanation._Clicking_on_the_picture_will_download_the_highest_resolution_version_available.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop')
-        .parent().click()
+      cy.wrap(button)
+        .children()
+          .first()
+            .invoke('attr', 'src').then($src => {
+              expect(urls).to.include($src)
+            })
+
+        cy.wrap(button)
+          .click()
       })
  })
 
