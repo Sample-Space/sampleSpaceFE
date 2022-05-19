@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  heroku: circleci/heroku@x.y
+  heroku: circleci/heroku@1
   cypress: cypress-io/cypress@1
 workflows:
   build:
@@ -13,4 +13,4 @@ workflows:
              - build # only run deploy-via-git job if the build job has completed
            filters:
              branches:
-               only: main 
+               only: main
