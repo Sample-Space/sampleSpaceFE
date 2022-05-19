@@ -6,8 +6,12 @@ const App = () => {
   return (
     <div className='app'>
       <header>
-        <img src={logo} alt='Sample Space logo' />
-        <h2>an educational drum machine featuring samples from across the universe</h2>
+        <Link to='/'>
+          <img src={logo} alt='Sample Space logo' />
+        </Link>
+        <h2 className='subtitle'>
+          an educational drum machine featuring samples from across the universe
+        </h2>
       </header>
       <main className='main-view'>
         <h3 className='main-item'>Learn How to Play:</h3>

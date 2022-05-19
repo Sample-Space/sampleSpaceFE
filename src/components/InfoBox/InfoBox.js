@@ -1,16 +1,21 @@
 import './InfoBox.css'
 
-const InfoBox = () => {
+const InfoBox = ({ currentSample }) => {
+  let sampleName
+  let description
+  let link
+  if (currentSample !== null) {
+    sampleName = currentSample.sampleName
+    description = currentSample.description
+    link = currentSample.link
+  }
   return (
-    <>
-      <section className='info-box'>
-        <h2>Info Goes Here</h2>
-        <p>basic summary here</p>
-        <button>Tell me more!</button>
-        <p>Tempo</p>
-        <p>120</p>
-      </section>
-    </>
+    <section className='info-box'>
+      <h2>{sampleName ? sampleName : 'Sample Name'}</h2>
+      <p>{description ? description : 'Description'}</p>
+      <button disabled={!link}>Tell me more!</button>
+      <p>Tempo: 120</p>
+    </section>
   )
 }
 

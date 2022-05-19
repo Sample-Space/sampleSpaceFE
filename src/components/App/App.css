@@ -13,6 +13,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   /* border: 1px solid red; */
@@ -77,7 +78,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
 }
 
 .main-view {
@@ -104,4 +109,12 @@ header {
 
 .nav-button:hover {
   box-shadow: 0 0 2px white;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: var(--border-rad);
+  background-color: black;
+  box-shadow: 0 0 0.5rem 3px black;
+  background-image: url(/public/assets/images/space-bg.jpg);
 }
