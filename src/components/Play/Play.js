@@ -33,8 +33,8 @@ const Play = () => {
     })
   }
 
-//   const [currentSample, setCurrentSample] = useState(null)
-//   const [kit, setKit] = useState(null)
+  const [currentSample, setCurrentSample] = useState(null)
+  // const [kit, setKit] = useState(null)
 
 //   useEffect(() => {
 //     fetch('https://eab5b235-d42c-43c1-a6e3-290513e953fb.mock.pstmn.io/kits/Magnetosphere')
@@ -54,18 +54,17 @@ const Play = () => {
         </Link>
       </header>
 
-//       <main className='main-container'>
-//         {kit && <DrumPad kit={kit.kit} />}
-//         <InfoBox />
-//       </main>
-//     </>
+       <main className='main-container'>
+        {kit && <DrumPad kit={kit.kit} />}
+         <InfoBox />
+       </main>
 
-      {kit && (
-        <main className='main-container'>
-          <DrumPad setCurrentSample={setCurrentSample} kit={kit} />
-          <InfoBox currentSample={currentSample} />
-        </main>
-      )}
+       {/* {kit && (
+      <main className='main-container'>
+        <DrumPad setCurrentSample={setCurrentSample} kit={kit} />
+           <InfoBox currentSample={currentSample} />
+      </main>
+ )} */}
     </div>
 
   )
