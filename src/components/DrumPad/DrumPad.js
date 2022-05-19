@@ -4,7 +4,7 @@ import { sampleKit } from '../../sampleKit'
 import DrumPadButton from '../DrumPadButton/DrumPadButton'
 import './DrumPad.css'
 
-const DrumPad = ({ setCurentSample }) => {
+const DrumPad = ({ setCurentSample, kit }) => {
   const [notes, setNotes] = React.useState(null)
 
   const handlePlay = (e) => {
