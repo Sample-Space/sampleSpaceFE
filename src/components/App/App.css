@@ -13,6 +13,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   /* border: 1px solid red; */
@@ -104,4 +105,11 @@ header {
 
 .nav-button:hover {
   box-shadow: 0 0 2px white;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: var(--border-rad);
+  background-color: black;
+  box-shadow: 0 0 0.5rem 3px black;
 }
