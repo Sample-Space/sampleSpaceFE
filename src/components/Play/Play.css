@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 60vw;
-  height: 45vh;
+  height: 100%;
   align-items: center;
   gap: 0.5rem;
   background-color: black;
