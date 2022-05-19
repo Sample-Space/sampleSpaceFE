@@ -7,7 +7,7 @@ import './DrumPad.css'
 const DrumPad = ( {kit} ) => {
   const [notes, setNotes] = React.useState(null)
 
-  console.log(kit.elements.kick.thumbnail_url)
+  // console.log(kit.elements.kick.thumbnail_url)
   return (
     <div className='pad-container'>
       <DrumPadButton
