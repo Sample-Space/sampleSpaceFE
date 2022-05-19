@@ -18,9 +18,10 @@
   width: 60vw;
   height: 100%;
   align-items: center;
+  justify-items: center;
   gap: 0.5rem;
   background-color: black;
-  padding: 1.5rem;
+  padding: 1rem;
   border-top-left-radius: var(--border-rad);
   border-bottom-left-radius: var(--border-rad);
 }
