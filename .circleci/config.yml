@@ -9,12 +9,12 @@ workflows:
           start: npm start
           wait-on: 'http://localhost:3000'
   deploy:
-    build:
-      jobs:
-        - cypress/run:
-            start: npm start
-            wait-on: 'http://localhost:3000'
     jobs:
+      build:
+        jobs:
+          - cypress/run:
+              start: npm start
+              wait-on: 'http://localhost:3000'
       - heroku/deploy-via-git:
            requires:
              - build # only run deploy-via-git job if the build job has completed
