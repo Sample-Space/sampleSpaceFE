@@ -1,5 +1,6 @@
 version: 2.1
 orbs:
+  heroku: circleci/heroku@x.y
   cypress: cypress-io/cypress@1
 workflows:
   build:
@@ -7,4 +8,9 @@ workflows:
       - cypress/run:
           start: npm start
           wait-on: 'http://localhost:3000'
-
+      - heroku/deploy-via-git:
+           requires:
+             - build # only run deploy-via-git job if the build job has completed
+           filters:
+             branches:
+               only: main 
