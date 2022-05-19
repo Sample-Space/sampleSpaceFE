@@ -11,6 +11,7 @@ describe('/play endpoint', () => {
  })
 
  it('Should have 8 clickable buttons', () => {
+   cy.wait(500)
    const urls = sampleKit.kit1.map(element => element.img)
    let buttons = cy.get('.pad-container')
 
