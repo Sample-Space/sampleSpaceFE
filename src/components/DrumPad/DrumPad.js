@@ -4,17 +4,27 @@ import { sampleKit } from '../../sampleKit'
 import DrumPadButton from '../DrumPadButton/DrumPadButton'
 import './DrumPad.css'
 
-const DrumPad = ( {kit} ) => {
+const DrumPad = ({ setCurentSample, kit }) => {
   const [notes, setNotes] = React.useState(null)
 
-  // console.log(kit.elements.kick.thumbnail_url)
+  const handlePlay = (e) => {
+    e.preventDefault()
+    // const currentSample = find the current sample from the array
+    // setCurentSample(currentSample)
+  }
+
   return (
     <div className='pad-container'>
       <DrumPadButton
         setNotes={setNotes}
         note={'E3'}
         id={'sample-1'}
+
         // imgSrc={kit.elements.kick.thumbnail_url}
+
+        imgSrc={sampleKit.kit1[0].img}
+        onClick={handlePlay}
+
       />
       <DrumPadButton
         setNotes={setNotes}

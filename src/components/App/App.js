@@ -6,8 +6,10 @@ const App = () => {
   return (
     <div className='app'>
       <header>
-        <img src={logo} alt='Sample Space logo' />
-        <h2>
+        <Link to='/'>
+          <img src={logo} alt='Sample Space logo' />
+        </Link>
+        <h2 className='subtitle'>
           an educational drum machine featuring samples from across the universe
         </h2>
       </header>
