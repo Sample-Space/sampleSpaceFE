@@ -8,16 +8,33 @@ workflows:
       - cypress/run:
           start: npm start
           wait-on: 'http://localhost:3000'
-  deploy:
+  heroku_deploy:
     jobs:
-      build:
-        jobs:
-          - cypress/run:
-              start: npm start
-              wait-on: 'http://localhost:3000'
-      - heroku/deploy-via-git:
-           requires:
-             - build # only run deploy-via-git job if the build job has completed
-           filters:
-             branches:
-               only: main
+      - build
+      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
+          requires:
+            - build
+          filters:
+            branches:
+              only: sequential-branch-filter
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:2.4-node
+        auth:
+          username: mydockerhub-user
+          password: $HEROKU_PASSWORD  # context / project UI env-var reference
+      - image: cimg/postgres:9.6
+        auth:
+          username: mydockerhub-user
+          password: $HEROKU_PASSWORD  # context / project UI env-var reference
+    working_directory: ~/circleci-demo-workflows
+    steps:
+      - checkout
+      # Bundle install dependencies
+      - run: bundle install --path vendor/bundle
+      # Database setup
+      - run: bundle exec rake db:create db:schema:load
+      - run:
+          name: Run tests
+          command: rake
