@@ -9,6 +9,12 @@ workflows:
           start: npm start
           wait-on: 'http://localhost:3000'
   heroku_deploy:
+    triggers:
+      - schedule:
+          filters:
+            branches:
+              only:
+                - main
     jobs:
       - heroku/deploy-via-git:
           branch: main
