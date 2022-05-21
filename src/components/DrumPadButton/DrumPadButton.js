@@ -1,7 +1,7 @@
 import './DrumPadButton.css'
-import { forwardRef } from 'react';
+import { forwardRef } from 'react'
 
-const DrumPadButton = forwardRef(({ setNotes, note, id, imgSrc }, ref) => {
+const DrumPadButton = forwardRef(({ setNotes, note, id, imgSrc, keystroke }, ref) => {
   const onClick = async () => {
     await setNotes([{ name: note, duration: 4 }])
     await setNotes(null)
@@ -17,9 +17,9 @@ const DrumPadButton = forwardRef(({ setNotes, note, id, imgSrc }, ref) => {
       onClick={onClick}
     >
       <img className='pad-image' src={imgSrc} />
+      <p className='keystroke'>{keystroke}</p>
     </button>
   )
-
 })
 
 export default DrumPadButton
