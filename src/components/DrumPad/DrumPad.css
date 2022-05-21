@@ -1,4 +1,5 @@
 .drum-pad {
+  position: relative;
   width: 13.5vw;
   height: 13.5vw;
   border-radius: 10px;
@@ -27,4 +28,11 @@
 
 .pad-container {
   background-image: url(/public/assets/images/space-bg.jpg);
+}
+
+.keystroke {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  text-shadow: 0 0 3px black;
 }
