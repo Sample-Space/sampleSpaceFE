@@ -48,11 +48,25 @@ const Play = () => {
           grooveRef.current.click()
       }
     },
-    [ kickRef, snareRef, hhClosedRef, hhOpenRef, oneShotOneRef, oneShotTwoRef, melodyRef, grooveRef ]
+    [
+      kickRef,
+      snareRef,
+      hhClosedRef,
+      hhOpenRef,
+      oneShotOneRef,
+      oneShotTwoRef,
+      melodyRef,
+      grooveRef
+    ]
   )
   useEffect(() => {
     // getKitNames()
-    getKit('Starshipp')
+    // getKit('Starshipp')
+    fetch(
+      'https://eab5b235-d42c-43c1-a6e3-290513e953fb.mock.pstmn.io/kits/IntimateNebula'
+    )
+      .then((res) => res.json())
+      .then((data) => setKit(data))
   }, [])
 
   useEffect(() => {

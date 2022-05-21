@@ -5,15 +5,17 @@ const InfoBox = ({ currentSample }) => {
   let description
   let link
   if (currentSample !== null) {
-    sampleName = currentSample.sampleName
+    sampleName = currentSample.name
     description = currentSample.description
-    link = currentSample.link
+    link = currentSample.info_url
   }
   return (
     <section className='info-box'>
-      <h2>{sampleName ? sampleName : 'Sample Name'}</h2>
-      <p>{description ? description : 'Description'}</p>
-      <button disabled={!link}>Tell me more!</button>
+      <h2>{sampleName ? sampleName : 'Play a Sample to learn more!'}</h2>
+      <p>{description ? description : ''}</p>
+      <a href={link}>
+        <button disabled={!link}>Tell me more!</button>
+      </a>
       <p>Tempo: 120</p>
     </section>
   )
