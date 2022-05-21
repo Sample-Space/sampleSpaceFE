@@ -11,16 +11,14 @@ const Play = () => {
   const [kit, setKit] = useState({})
   const [currentSample, setCurrentSample] = useState(null)
 
-
-  const kickRef = useRef(null);
-  const snareRef = useRef(null);
-  const hhClosedRef = useRef(null);
-  const hhOpenRef = useRef(null);
-  const oneShotOneRef = useRef(null);
-  const oneShotTwoRef = useRef(null);
-  const melodyRef = useRef(null);
-  const grooveRef = useRef(null);
-
+  const kickRef = useRef(null)
+  const snareRef = useRef(null)
+  const hhClosedRef = useRef(null)
+  const hhOpenRef = useRef(null)
+  const oneShotOneRef = useRef(null)
+  const oneShotTwoRef = useRef(null)
+  const melodyRef = useRef(null)
+  const grooveRef = useRef(null)
 
   const handleKeyboard = (e) => {
     switch (e.code) {
@@ -85,7 +83,9 @@ const Play = () => {
 
       {kit && (
         <main className='main-container'>
-          <DrumPad kit={kit.kit} setCurrentSample={setCurrentSample}
+          <DrumPad
+            kit={kit.kit}
+            setCurrentSample={setCurrentSample}
             allRefs={[
               kickRef,
               snareRef,
@@ -96,7 +96,8 @@ const Play = () => {
               melodyRef,
               grooveRef
             ]}
-             />
+            keystrokes={['Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F']}
+          />
           <InfoBox currentSample={currentSample} />
         </main>
       )}
