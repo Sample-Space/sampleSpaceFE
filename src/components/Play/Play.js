@@ -50,7 +50,7 @@ const Play = () => {
           grooveRef.current.click()
       }
     },
-    [kickRef, snareRef, hhClosedRef, hhOpenRef, oneShotOneRef, oneShotTwoRef, melodyRef, grooveRef ]
+    [ kickRef, snareRef, hhClosedRef, hhOpenRef, oneShotOneRef, oneShotTwoRef, melodyRef, grooveRef ]
   )
   useEffect(() => {
     // getKitNames()
