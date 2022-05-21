@@ -4,7 +4,7 @@ import { sampleKit } from '../../sampleKit'
 import DrumPadButton from '../DrumPadButton/DrumPadButton'
 import './DrumPad.css'
 
-const DrumPad = ({ setCurentSample, kit, kickRef }) => {
+const DrumPad = ({ setCurentSample, kit, allRefs }) => {
   const [notes, setNotes] = React.useState(null)
 
   const handlePlay = (e) => {
@@ -18,6 +18,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
       {kit && (
         <div className='pad-container'>
           <DrumPadButton
+            ref={allRefs[0]}
             setNotes={setNotes}
             note={'E3'}
             id={'sample-1'}
@@ -26,6 +27,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[1]}
             setNotes={setNotes}
             note={'F3'}
             id={'sample-2'}
@@ -34,6 +36,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[2]}
             setNotes={setNotes}
             note={'F#3'}
             id={'sample-3'}
@@ -42,6 +45,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[3]}
             setNotes={setNotes}
             note={'G3'}
             id={'groove'}
@@ -50,7 +54,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
-            kickRef={kickRef}
+            ref={allRefs[6]}
             setNotes={setNotes}
             note={'C3'}
             id={'kick'}
@@ -59,6 +63,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[4]}
             setNotes={setNotes}
             note={'C#3'}
             id={'snare'}
@@ -67,6 +72,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[5]}
             setNotes={setNotes}
             note={'D3'}
             id={'hh1'}
@@ -75,6 +81,7 @@ const DrumPad = ({ setCurentSample, kit, kickRef }) => {
             // onClick={handlePlay}
           />
           <DrumPadButton
+            ref={allRefs[7]}
             setNotes={setNotes}
             note={'D#3'}
             id={'hh2'}
