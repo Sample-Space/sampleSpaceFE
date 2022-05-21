@@ -4,7 +4,7 @@ import { sampleKit } from '../../sampleKit'
 import DrumPadButton from '../DrumPadButton/DrumPadButton'
 import './DrumPad.css'
 
-const DrumPad = ({ setCurentSample, kit, allRefs }) => {
+const DrumPad = ({ setCurentSample, kit, allRefs, keystrokes }) => {
   const [notes, setNotes] = React.useState(null)
 
   const handlePlay = (e) => {
@@ -23,6 +23,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             note={'E3'}
             id={'sample-1'}
             imgSrc={kit.elements.kick.thumbnail_url}
+            keystroke={keystrokes[0]}
             // imgSrc={sampleKit.kit1[0].img}
             // onClick={handlePlay}
           />
@@ -33,6 +34,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'sample-2'}
             // imgSrc={sampleKit.kit1[1].img}
             imgSrc={kit.elements.snare.thumbnail_url}
+            keystroke={keystrokes[1]}
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -42,6 +44,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'sample-3'}
             // imgSrc={sampleKit.kit1[2].img}
             imgSrc={kit.elements.hh_closed.thumbnail_url}
+            keystroke={keystrokes[2]}
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -51,6 +54,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'groove'}
             // imgSrc={sampleKit.kit1[3].img}
             imgSrc={kit.elements.hh_open.thumbnail_url}
+            keystroke={keystrokes[3]}
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -60,6 +64,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'kick'}
             // imgSrc={sampleKit.kit1[4].img}
             imgSrc={kit.elements.melody.thumbnail_url}
+            keystroke={keystrokes[4]}
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -69,6 +74,8 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'snare'}
             // imgSrc={sampleKit.kit1[5].img}
             imgSrc={kit.elements.one_shot_1.thumbnail_url}
+            keystroke={keystrokes[5]}
+
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -78,6 +85,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'hh1'}
             // imgSrc={sampleKit.kit1[6].img}
             imgSrc={kit.elements.one_shot_2.thumbnail_url}
+            keystroke={keystrokes[6]}
             // onClick={handlePlay}
           />
           <DrumPadButton
@@ -87,6 +95,7 @@ const DrumPad = ({ setCurentSample, kit, allRefs }) => {
             id={'hh2'}
             // imgSrc={sampleKit.kit1[7].img}
             imgSrc={kit.elements.texture.thumbnail_url}
+            keystroke={keystrokes[7]}
             // onClick={handlePlay}
           />
           <Song>
