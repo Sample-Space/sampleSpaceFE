@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import './Play.css'
 import logo from '../../assets/images/sample-space-logo.svg'
 import { fetchKitNames, fetchKit } from '../../APICalls'
@@ -22,38 +22,39 @@ const Play = () => {
   const grooveRef = useRef(null);
 
 
-  const handleKeyboard = (e) => {
-    switch (e.code) {
-      case 'KeyA':
-        kickRef.current.click()
-        break
-      case 'KeyS':
-        snareRef.current.click()
-        break
-      case 'KeyD':
-        hhClosedRef.current.click()
-        break
-      case 'KeyF':
-        hhOpenRef.current.click()
-        break
-      case 'KeyQ':
-        oneShotOneRef.current.click()
-        break
-      case 'KeyW':
-        oneShotTwoRef.current.click()
-        break
-      case 'KeyE':
-        melodyRef.current.click()
-        break
-      case 'KeyR':
-        grooveRef.current.click()
-    }
-  }
-
+  const handleKeyboard = useCallback(
+    (e) => {
+      switch (e.code) {
+        case 'KeyA':
+          kickRef.current.click()
+          break
+        case 'KeyS':
+          snareRef.current.click()
+          break
+        case 'KeyD':
+          hhClosedRef.current.click()
+          break
+        case 'KeyF':
+          hhOpenRef.current.click()
+          break
+        case 'KeyQ':
+          oneShotOneRef.current.click()
+          break
+        case 'KeyW':
+          oneShotTwoRef.current.click()
+          break
+        case 'KeyE':
+          melodyRef.current.click()
+          break
+        case 'KeyR':
+          grooveRef.current.click()
+      }
+    },
+    [kickRef, snareRef, hhClosedRef, hhOpenRef, oneShotOneRef, oneShotTwoRef, melodyRef, grooveRef ]
+  )
   useEffect(() => {
     // getKitNames()
     getKit('Starshipp')
-    console.log(kit)
   }, [])
 
   useEffect(() => {
