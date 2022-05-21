@@ -10,25 +10,17 @@ const Play = () => {
   const [kitNames, setKitNames] = useState([])
   const [kit, setKit] = useState({})
   const [currentSample, setCurrentSample] = useState(null)
-  const kickRef = useRef(null)
-  const snareRef = useRef(null)
-  const hh_closedRef = useRef(null)
-  const hh_openRef = useRef(null)
-  const one_shot_1Ref = useRef(null)
-  const one_shot_2Ref = useRef(null)
-  const melodyRef = useRef(null)
-  const grooveRef = useRef(null)
 
-  const allRefs = [
-    kickRef,
-    snareRef,
-    hh_closedRef,
-    hh_openRef,
-    one_shot_1Ref,
-    one_shot_2Ref,
-    melodyRef,
-    grooveRef
-  ]
+
+  const kickRef = useRef(null);
+  const snareRef = useRef(null);
+  const hhClosedRef = useRef(null);
+  const hhOpenRef = useRef(null);
+  const oneShotOneRef = useRef(null);
+  const oneShotTwoRef = useRef(null);
+  const melodyRef = useRef(null);
+  const grooveRef = useRef(null);
+
 
   const handleKeyboard = (e) => {
     switch (e.code) {
@@ -39,16 +31,16 @@ const Play = () => {
         snareRef.current.click()
         break
       case 'KeyD':
-        hh_closedRef.current.click()
+        hhClosedRef.current.click()
         break
       case 'KeyF':
-        hh_openRef.current.click()
+        hhOpenRef.current.click()
         break
       case 'KeyQ':
-        one_shot_1Ref.current.click()
+        oneShotOneRef.current.click()
         break
       case 'KeyW':
-        one_shot_2Ref.current.click()
+        oneShotTwoRef.current.click()
         break
       case 'KeyE':
         melodyRef.current.click()
@@ -67,7 +59,7 @@ const Play = () => {
   useEffect(() => {
     document.addEventListener('keydown', handleKeyboard)
     return () => {
-      document.removeEventListener('keyup', handleKeyboard)
+      document.removeEventListener('keydown', handleKeyboard)
     }
   }, [handleKeyboard])
 
@@ -93,7 +85,18 @@ const Play = () => {
 
       {kit && (
         <main className='main-container'>
-          <DrumPad kit={kit.kit} setCurrentSample={setCurrentSample} kickRef={kickRef} />
+          <DrumPad kit={kit.kit} setCurrentSample={setCurrentSample}
+            allRefs={[
+              kickRef,
+              snareRef,
+              hhClosedRef,
+              hhOpenRef,
+              oneShotOneRef,
+              oneShotTwoRef,
+              melodyRef,
+              grooveRef
+            ]}
+             />
           <InfoBox currentSample={currentSample} />
         </main>
       )}
