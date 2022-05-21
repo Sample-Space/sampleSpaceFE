@@ -66,10 +66,7 @@ const Play = () => {
       'https://eab5b235-d42c-43c1-a6e3-290513e953fb.mock.pstmn.io/kits/IntimateNebula'
     )
       .then((res) => res.json())
-      .then((data) => {
-        setKit(data)
-        console.log(data)
-      })
+      .then((data) => setKit(data))
   }, [])
 
   useEffect(() => {
