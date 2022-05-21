@@ -24,6 +24,8 @@
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s;
+  height: 11vw;
+  width: 11vw;
 }
 
 .pad-container {
@@ -33,6 +35,7 @@
 .keystroke {
   position: absolute;
   color: white;
-  bottom: 0;
-  text-shadow: 0 0 3px black;
+  bottom: 0.8vh;
+  left: 1.5vw;
+  text-shadow: 0 0 4px black;
 }
