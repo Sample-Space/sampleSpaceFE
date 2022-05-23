@@ -1,5 +1,6 @@
 import './App.css'
 import logo from '../../assets/images/sample-space-logo.svg'
+import Carousel from '../Carousel/Carousel'
 import { Link } from 'react-router-dom'
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
         </h2>
       </header>
       <main className='main-view'>
-        <h3 className='main-item'>Learn How to Play:</h3>
+        <Carousel />
+        {/* <h3 className='main-item'>Learn How to Play:</h3>
         <iframe
           className='main-item'
           width='560'
@@ -24,10 +26,10 @@ const App = () => {
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen
-        ></iframe>
-        <Link to='/play'>
+        ></iframe> */}
+        {/* <Link to='/play'>
           <button className='main-item nav-button'>Let's Jam</button>
-        </Link>
+        </Link> */}
       </main>
     </div>
   )
