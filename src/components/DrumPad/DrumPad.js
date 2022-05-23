@@ -113,22 +113,22 @@ const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
                 type='sampler'
                 notes={notes}
                 samples={{
-                  // C3: kit.elements.kick.sound_url,
-                  // 'C#3': kit.elements.snare.sound_url,
-                  // D3: kit.elements.hh_closed.sound_url,
-                  // 'D#3': kit.elements.hh_open.sound_url,
-                  // E3: kit.elements.melody.sound_url,
-                  // F3: kit.elements.one_shot_1.sound_url,
-                  // 'F#3': kit.elements.one_shot_2.sound_url,
-                  // G3: kit.elements.texture.sound_url
-                  C3: sampleKit.kit1[0].sample,
-                  'C#3': sampleKit.kit1[1].sample,
-                  D3: sampleKit.kit1[2].sample,
-                  'D#3': sampleKit.kit1[3].sample,
-                  E3: sampleKit.kit1[4].sample,
-                  F3: sampleKit.kit1[5].sample,
-                  'F#3': sampleKit.kit1[6].sample,
-                  G3: sampleKit.kit1[7].sample
+                  C3: kit.elements.kick.sound_url,
+                  'C#3': kit.elements.snare.sound_url,
+                  D3: kit.elements.hh_closed.sound_url,
+                  'D#3': kit.elements.hh_open.sound_url,
+                  E3: kit.elements.melody.sound_url,
+                  F3: kit.elements.one_shot_1.sound_url,
+                  'F#3': kit.elements.one_shot_2.sound_url,
+                  G3: kit.elements.texture.sound_url
+                  // C3: sampleKit.kit1[0].sample,
+                  // 'C#3': sampleKit.kit1[1].sample,
+                  // D3: sampleKit.kit1[2].sample,
+                  // 'D#3': sampleKit.kit1[3].sample,
+                  // E3: sampleKit.kit1[4].sample,
+                  // F3: sampleKit.kit1[5].sample,
+                  // 'F#3': sampleKit.kit1[6].sample,
+                  // G3: sampleKit.kit1[7].sample
                 }}
               />
             </Track>
