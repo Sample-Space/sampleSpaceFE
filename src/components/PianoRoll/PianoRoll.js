@@ -3,7 +3,7 @@ import { Song, Track, Instrument } from 'reactronica';
 
 
 const PianoRoll = () => {
-  const [isPlaying, setIsPlaying] - useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [steps, setSteps] = useState([
     null,
@@ -24,7 +24,12 @@ const PianoRoll = () => {
     null
   ])
     return (
+      <>
         <h1>PIANO ROLL</h1>
+        <button onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? ' || ' : ' |> '}
+        </button>
+      </>
     )
 }
 
