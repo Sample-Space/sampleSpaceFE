@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Song, Track, Instrument } from 'reactronica';
+import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js';
 
 const PianoRoll = ({ kit }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -24,6 +25,8 @@ const PianoRoll = ({ kit }) => {
   ])
     return (
       <>
+      {kit && (
+        <>
         <h1>PIANO ROLL</h1>
         <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? ' || ' : ' |> '}
@@ -31,6 +34,7 @@ const PianoRoll = ({ kit }) => {
 
         <PianoRollDisplay
         currentStepIndex={currentStepIndex}
+        steps={steps}
         onclick={(steps) => setSteps(steps)}
         />
 
@@ -57,6 +61,8 @@ const PianoRoll = ({ kit }) => {
             />
           </Track>
         </Song>
+        </>
+      )}
       </>
     )
 }
