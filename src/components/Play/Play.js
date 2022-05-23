@@ -62,9 +62,7 @@ const Play = () => {
   useEffect(() => {
     // getKitNames()
     // getKit('Starshipp')
-    fetch(
-      'https://eab5b235-d42c-43c1-a6e3-290513e953fb.mock.pstmn.io/kits/IntimateNebula'
-    )
+    fetch('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Pain')
       .then((res) => res.json())
       .then((data) => setKit(data))
   }, [])
@@ -76,11 +74,11 @@ const Play = () => {
     }
   }, [handleKeyboard])
 
-  const getKitNames = () => {
-    fetchKitNames().then((data) => {
-      setKitNames(data)
-    })
-  }
+  // const getKitNames = () => {
+  //   fetchKitNames().then((data) => {
+  //     setKitNames(data)
+  //   })
+  // }
 
   const getKit = (kitName) => {
     fetchKit(kitName).then((kitData) => {
