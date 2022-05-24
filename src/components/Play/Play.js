@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom'
 
 const Play = () => {
   const [kitNames, setKitNames] = useState([])
-  const [kit, setKit] = useState({})
+  const [kit, setKit] = useState(null)
   const [currentSample, setCurrentSample] = useState(null)
-  const [selectedKit, setSelectedKit] = useState(null)
+  const [selectedKit, setSelectedKit] = useState('Andromeda%20Strain')
 
   const kickRef = useRef(null)
   const snareRef = useRef(null)
@@ -62,10 +62,12 @@ const Play = () => {
   )
   useEffect(() => {
     getKitNames()
-    fetch('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Pain')
-      .then((res) => res.json())
-      .then((data) => setKit(data))
+    fetchKit('Magnetosphere').then((data) => setKit(data))
   }, [])
+
+  useEffect(() => {
+    fetchKit(selectedKit).then((data) => setKit(data))
+  }, [selectedKit])
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyboard)
@@ -86,6 +88,10 @@ const Play = () => {
     })
   }
 
+  const changeKit = (selectedKit) => {
+    fetchKit(selectedKit).then((data) => setKit(data.kit))
+  }
+
   return (
     <div className='main-view'>
       <header>
@@ -93,6 +99,9 @@ const Play = () => {
           <img src={logo} alt='Sample Space logo' />
         </Link>
       </header>
+      <label htmlFor='kit-select' className='kit-label'>
+        Choose a Kit to Play!
+      </label>
       <select
         className='kit-select'
         name='kit-select'
