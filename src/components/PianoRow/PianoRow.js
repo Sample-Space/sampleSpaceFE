@@ -1,5 +1,6 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './PianoRow.css'
 
 const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
@@ -36,12 +37,30 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
       {row}
       </>
 =======
+=======
+import './PianoRow.css'
 
-const PianoRow = () => {
+const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
+  
+  let row = (
+    <div className='row'>
+    {name ? <p>{name}</p> : <p> </p>}
+    {name ? steps.map((step, index) => steps[index] && steps[index].includes(note) ? <button onClick={() => toggleNote(note, index)} key={index}>{index}</button> : <button onClick={} >Pog</button>) : steps.map((step, index) => <p key={index}>{index + 1}</p>)}
+    </div>
+  )
+
+>>>>>>> 99266b1 (Create row with buttons)
+
     return (
+<<<<<<< HEAD
         <div>
         </div>
 >>>>>>> e704ce2 (Create PianoRow component)
+=======
+      <>
+      {row}
+      </>
+>>>>>>> 99266b1 (Create row with buttons)
     )
 }
 
