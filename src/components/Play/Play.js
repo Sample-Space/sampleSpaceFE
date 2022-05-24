@@ -60,8 +60,7 @@ const Play = () => {
     ]
   )
   useEffect(() => {
-    // getKitNames()
-    // getKit('Starshipp')
+    getKitNames()
     fetch('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Pain')
       .then((res) => res.json())
       .then((data) => setKit(data))
