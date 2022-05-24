@@ -44,7 +44,7 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) =
 
   let row = (
     <div className='row'>
-    {name ? <p>{name}</p> : <p>Steps</p>}
+    {name ? <div><p>{name}</p></div> : <div><p>Steps</p></div>}
     {name ? createButtons() : steps.map((step, index) =><p key={index}>{index + 1}</p>)}
     </div>
   )

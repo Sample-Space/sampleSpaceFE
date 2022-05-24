@@ -1,14 +1,9 @@
 .piano-roll {
-  width: 80vw;
-  margin-top: 7.5rem;
-  padding-bottom: 5rem;
-}
-
-.piano-roll {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
  }
 
 
