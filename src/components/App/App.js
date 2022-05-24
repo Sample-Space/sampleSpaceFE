@@ -16,20 +16,9 @@ const App = () => {
       </header>
       <main className='main-view'>
         <Carousel />
-        {/* <h3 className='main-item'>Learn How to Play:</h3>
-        <iframe
-          className='main-item'
-          width='560'
-          height='315'
-          src='https://www.youtube.com/embed/dokLwszdUgY'
-          title='YouTube video player'
-          frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen
-        ></iframe> */}
-        {/* <Link to='/play'>
+        <Link to='/play'>
           <button className='main-item nav-button'>Let's Jam</button>
-        </Link> */}
+        </Link>
       </main>
     </div>
   )

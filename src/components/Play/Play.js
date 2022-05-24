@@ -12,6 +12,7 @@ const Play = () => {
   const [kit, setKit] = useState(null)
   const [currentSample, setCurrentSample] = useState(null)
   const [selectedKit, setSelectedKit] = useState('Andromeda%20Strain')
+  const isFirstLoad = useRef(true)
 
   const kickRef = useRef(null)
   const snareRef = useRef(null)
@@ -61,13 +62,22 @@ const Play = () => {
       grooveRef
     ]
   )
+
+  const clearSamples = () => {
+    setKit(null)
+  }
+
   useEffect(() => {
-    getKitNames()
-    fetchKit('Magnetosphere').then((data) => setKit(data))
+    fetchKit('Andromeda%20Strain').then((data) => setKit(data))
   }, [])
 
   useEffect(() => {
-    fetchKit(selectedKit).then((data) => setKit(data))
+    if (isFirstLoad.current) {
+      isFirstLoad.current = false
+    } else {
+      clearSamples()
+      fetchKit(selectedKit).then((data) => setKit(data))
+    }
   }, [selectedKit])
 
   useEffect(() => {
@@ -131,8 +141,7 @@ const Play = () => {
           />
           <InfoBox currentSample={currentSample} />
 
-          <PianoRoll
-            kit={kit.kit} />
+          <PianoRoll kit={kit.kit} />
         </main>
       )}
     </div>

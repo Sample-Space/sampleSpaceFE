@@ -20,11 +20,7 @@ const Carousel = () => {
           Each sound has info on it's astral origin, learn even more by clicking the handy
           link!
         </div>
-        <div id='slide-5'>
-          <a className='nav-button' id='enter' href='/play'>
-            Let's Jam
-          </a>
-        </div>
+        <div id='slide-5'>Click 'Let's Jam' to get started!</div>
       </div>
       <a href='#slide-1'>1</a>
       <a href='#slide-2'>2</a>
