@@ -100,12 +100,10 @@ const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
             setNotes={setNotes}
             note={'D#3'}
             id={'hh_open'}
-            // imgSrc={sampleKit.kit1[7].img}
             imgSrc={kit.elements.texture.thumbnail_url}
             keystroke={keystrokes[7]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <Song>
             <Track>
