@@ -74,11 +74,11 @@ const Play = () => {
     }
   }, [handleKeyboard])
 
-  // const getKitNames = () => {
-  //   fetchKitNames().then((data) => {
-  //     setKitNames(data)
-  //   })
-  // }
+  const getKitNames = () => {
+    fetchKitNames().then((data) => {
+      setKitNames(data)
+    })
+  }
 
   const getKit = (kitName) => {
     fetchKit(kitName).then((kitData) => {
