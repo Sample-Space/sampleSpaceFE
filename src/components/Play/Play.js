@@ -131,7 +131,8 @@ const Play = () => {
           />
           <InfoBox currentSample={currentSample} />
 
-          <PianoRoll />
+          <PianoRoll
+            kit={kit.kit} />
         </main>
       )}
     </div>

@@ -28,6 +28,7 @@ const PianoRoll = ({ kit }) => {
   ])
 =======
 
+<<<<<<< HEAD
 
 const PianoRoll = () => {
 <<<<<<< HEAD
@@ -37,11 +38,14 @@ const PianoRoll = () => {
 =======
   const [isPlaying, setIsPlaying] - useState(false);
 =======
+=======
+const PianoRoll = ({ kit }) => {
+>>>>>>> 15e34c2 (Pass kit down as props)
   const [isPlaying, setIsPlaying] = useState(false);
 >>>>>>> 471cda8 (Create button to control PianoRoll is playing or not)
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [steps, setSteps] = useState([
-    null,
+    ['C3', 'C#3'],
     null,
     null,
     null,
@@ -114,7 +118,39 @@ const PianoRoll = () => {
         <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? ' || ' : ' |> '}
         </button>
+<<<<<<< HEAD
 >>>>>>> 471cda8 (Create button to control PianoRoll is playing or not)
+=======
+
+        <PianoRollDisplay
+        currentStepIndex={currentStepIndex}
+        onclick={(steps) => setSteps(steps)}
+        />
+
+
+        <Song isPlaying={isPlaying}>
+          <Track
+            steps={steps}
+            onStepPlay={(stepNotes, index) => {
+              setCurrentStepIndex(index);
+            }}
+          >
+            <Instrument
+            type='sampler'
+            samples={{
+              C3: kit.elements.kick.sound_url,
+              'C#3': kit.elements.snare.sound_url,
+              D3: kit.elements.hh_closed.sound_url,
+              'D#3': kit.elements.hh_open.sound_url,
+              E3: kit.elements.melody.sound_url,
+              F3: kit.elements.one_shot_1.sound_url,
+              'F#3': kit.elements.one_shot_2.sound_url,
+              G3: kit.elements.texture.sound_url
+            }}
+            />
+          </Track>
+        </Song>
+>>>>>>> 15e34c2 (Pass kit down as props)
       </>
     )
 }
