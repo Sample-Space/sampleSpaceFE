@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.active {
+  background-color: red;
+}
+
+.piano-button {
+  width: 50%;
+  height: auto;
+}
