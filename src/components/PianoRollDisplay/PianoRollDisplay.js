@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './PianoRollDisplay.css';
 import PianoRow from '../PianoRow/PianoRow.js'
@@ -65,6 +66,14 @@ const PianoRollDisplay = ({currentStepIndex, steps, setSteps }) => {
             setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
+=======
+import React from 'react'
+
+const PianoRollDisplay = () => {
+    return (
+        <section>
+          <
+>>>>>>> 2b6e4fc (Create react export component)
         </section>
     )
 }
