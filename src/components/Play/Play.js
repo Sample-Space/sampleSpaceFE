@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import './Play.css'
+import PianoRoll from '../PianoRoll/PianoRoll.js'
 import logo from '../../assets/images/sample-space-logo.svg'
 import { fetchKitNames, fetchKit } from '../../APICalls'
 import DrumPad from '../DrumPad/DrumPad'
@@ -129,6 +130,8 @@ const Play = () => {
             keystrokes={['Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F']}
           />
           <InfoBox currentSample={currentSample} />
+
+          <PianoRoll />
         </main>
       )}
     </div>
