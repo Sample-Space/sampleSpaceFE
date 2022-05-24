@@ -10,6 +10,7 @@ const Play = () => {
   const [kitNames, setKitNames] = useState([])
   const [kit, setKit] = useState({})
   const [currentSample, setCurrentSample] = useState(null)
+  const [selectedKit, setSelectedKit] = useState(null)
 
   const kickRef = useRef(null)
   const snareRef = useRef(null)
@@ -93,6 +94,16 @@ const Play = () => {
           <img src={logo} alt='Sample Space logo' />
         </Link>
       </header>
+
+      <select
+        className='kit-select'
+        name='kit-select'
+        onChange={(e) => setSelectedKit(e.target.value)}
+      >
+        <option value='andromedaStrain'>Andromeda Strain</option>
+        <option value='magnetosphere'>Magnetosphere</option>
+        <option value='apollo11'>Apollo11</option>
+      </select>
 
       {kit && (
         <main className='main-container'>
