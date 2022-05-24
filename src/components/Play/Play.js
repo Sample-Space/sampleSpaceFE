@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import './Play.css'
 import logo from '../../assets/images/sample-space-logo.svg'
 import { fetchKitNames, fetchKit } from '../../APICalls'
+import PianoRoll from '../PianoRoll/PianoRoll.js'
 import DrumPad from '../DrumPad/DrumPad'
 import InfoBox from '../InfoBox/InfoBox'
 import { Link } from 'react-router-dom'
@@ -129,6 +130,9 @@ const Play = () => {
             keystrokes={['Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F']}
           />
           <InfoBox currentSample={currentSample} />
+
+          <PianoRoll
+            kit={kit.kit} />
         </main>
       )}
     </div>
