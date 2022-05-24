@@ -78,10 +78,6 @@ const Play = () => {
       clearSamples()
       fetchKit(selectedKit).then((data) => setKit(data))
     }
-
-    return () => {
-      console.log('cleared')
-    }
   }, [selectedKit])
 
   useEffect(() => {
