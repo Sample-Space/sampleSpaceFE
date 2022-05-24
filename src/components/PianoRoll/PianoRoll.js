@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { Song, Track, Instrument } from 'reactronica';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js';
 import './PianoRoll.css'
 import { sampleKit } from '../../sampleKit.js'
+=======
+import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js';
+>>>>>>> 021424f (Import PianoRollDisplay and pass steps props)
 
 const PianoRoll = ({ kit }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -66,6 +70,7 @@ const PianoRoll = ({ kit }) => {
     return (
       <>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {kit && (
         <section className="piano-roll">
         <button onClick={() => setIsPlaying(!isPlaying)}>
@@ -114,6 +119,10 @@ const PianoRoll = ({ kit }) => {
       </section>
       )}
 =======
+=======
+      {kit && (
+        <>
+>>>>>>> 021424f (Import PianoRollDisplay and pass steps props)
         <h1>PIANO ROLL</h1>
         <button onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? ' || ' : ' |> '}
@@ -124,6 +133,7 @@ const PianoRoll = ({ kit }) => {
 
         <PianoRollDisplay
         currentStepIndex={currentStepIndex}
+        steps={steps}
         onclick={(steps) => setSteps(steps)}
         />
 
@@ -150,7 +160,12 @@ const PianoRoll = ({ kit }) => {
             />
           </Track>
         </Song>
+<<<<<<< HEAD
 >>>>>>> 15e34c2 (Pass kit down as props)
+=======
+        </>
+      )}
+>>>>>>> 021424f (Import PianoRollDisplay and pass steps props)
       </>
     )
 }
