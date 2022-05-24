@@ -33,8 +33,22 @@ const PianoRoll = ({ kit }) => {
             {isPlaying ? ' || ' : ' |> '}
           </button>
 
+<<<<<<< HEAD
           <PianoRollDisplay
             currentStepIndex={currentStepIndex}
+=======
+        <PianoRollDisplay
+        currentStepIndex={currentStepIndex}
+        steps={steps}
+        setSteps={setSteps}
+        isPlaying={isPlaying}
+        />
+
+
+        <Song isPlaying={isPlaying}
+          bpm={180}>
+          <Track
+>>>>>>> 159fa2e (Pass isPlaying as props)
             steps={steps}
             setSteps={setSteps}
           />

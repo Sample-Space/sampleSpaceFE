@@ -1,7 +1,12 @@
 import React from 'react'
 import './PianoRow.css'
 
+<<<<<<< HEAD
 const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
+=======
+const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) => {
+
+>>>>>>> 159fa2e (Pass isPlaying as props)
   const toggleNote = (note, i) => {
     let newSteps = [...steps]
 
