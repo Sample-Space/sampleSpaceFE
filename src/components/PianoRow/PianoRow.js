@@ -26,8 +26,29 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) =
     }
   }
 
+  const createButtons = () => {
+    return steps.map((step, index) => {
+      return steps[index] && steps[index].includes(note) ?
+      <div>
+        <button onClick={() => toggleNote(note, index)}
+          key={index}
+          className={`active piano-button ${currentStepIndex === index && isPlaying ? 'playing' : '' }`}>
+        </button>
+      </div>
+      :
+      <div>
+        <button
+          onClick={() => toggleNote(note, index)}
+          key={index}
+          className={`piano-button ${currentStepIndex === index && isPlaying  ? 'playing' : '' }`}>
+        </button>
+      </div>
+    })
+  }
+
   let row = (
     <div className='row'>
+<<<<<<< HEAD
       {/* {name ? <p>{name}</p> : <p> </p>} */}
       {name
         ? steps.map((step, index) =>
@@ -46,6 +67,10 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) =
             )
           )
         : steps.map((step, index) => <p key={index}>{index + 1}</p>)}
+=======
+    {name ? <p>{name}</p> : <p>Steps</p>}
+    {name ? createButtons() : steps.map((step, index) =><p key={index}>{index + 1}</p>)}
+>>>>>>> 19e7b0d (Increase readability of button generator)
     </div>
   )
 
