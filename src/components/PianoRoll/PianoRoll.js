@@ -31,10 +31,14 @@ const PianoRoll = ({ kit }) => {
 
 const PianoRoll = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 >>>>>>> c9da7bb (Import reactronica and React)
 =======
   const [isPlaying, setIsPlaying] - useState(false);
+=======
+  const [isPlaying, setIsPlaying] = useState(false);
+>>>>>>> 471cda8 (Create button to control PianoRoll is playing or not)
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [steps, setSteps] = useState([
     null,
@@ -57,6 +61,7 @@ const PianoRoll = () => {
 >>>>>>> 37c86b6 (Initialize react hooks)
     return (
       <>
+<<<<<<< HEAD
       {kit && (
         <section className="piano-roll">
         <button onClick={() => setIsPlaying(!isPlaying)}>
@@ -104,6 +109,12 @@ const PianoRoll = () => {
         </Song>
       </section>
       )}
+=======
+        <h1>PIANO ROLL</h1>
+        <button onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? ' || ' : ' |> '}
+        </button>
+>>>>>>> 471cda8 (Create button to control PianoRoll is playing or not)
       </>
     )
 }
