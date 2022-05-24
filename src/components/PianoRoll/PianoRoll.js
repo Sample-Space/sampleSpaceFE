@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import { Song, Track, Instrument } from 'reactronica'
 import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js'
@@ -7,6 +8,18 @@ import { sampleKit } from '../../sampleKit.js'
 const PianoRoll = ({ kit }) => {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentStepIndex, setCurrentStepIndex] = useState(0)
+=======
+import { useState } from 'react';
+import { Song, Track, Instrument } from 'reactronica';
+import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js';
+import './PianoRoll.css';
+
+const PianoRoll = ({ kit }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+
+>>>>>>> 4b3ff82 (Remove unused lines)
   const [steps, setSteps] = useState([
     ['C3'],
     null,
@@ -33,9 +46,24 @@ const PianoRoll = ({ kit }) => {
             {isPlaying ? ' || ' : ' |> '}
           </button>
 
+<<<<<<< HEAD
           <PianoRollDisplay
             currentStepIndex={currentStepIndex}
+=======
+        <PianoRollDisplay
+        currentStepIndex={currentStepIndex}
+        steps={steps}
+        setSteps={setSteps}
+        isPlaying={isPlaying}
+        />
+
+
+        <Song isPlaying={isPlaying}
+          bpm={180}>
+          <Track
+>>>>>>> 159fa2e (Pass isPlaying as props)
             steps={steps}
+<<<<<<< HEAD
             setSteps={setSteps}
           />
 
@@ -71,6 +99,28 @@ const PianoRoll = ({ kit }) => {
             </Track>
           </Song>
         </section>
+=======
+            onStepPlay={(stepNotes, index) => {
+              setCurrentStepIndex(index);
+            }}
+          >
+            <Instrument
+            type='sampler'
+            samples={{
+              C3: kit.elements.kick.sound_url,
+              'C#3': kit.elements.snare.sound_url,
+              D3: kit.elements.hh_closed.sound_url,
+              'D#3': kit.elements.hh_open.sound_url,
+              E3: kit.elements.melody.sound_url,
+              F3: kit.elements.one_shot_1.sound_url,
+              'F#3': kit.elements.one_shot_2.sound_url,
+              G3: kit.elements.texture.sound_url
+            }}
+            />
+          </Track>
+        </Song>
+      </section>
+>>>>>>> 4b3ff82 (Remove unused lines)
       )}
     </>
   )
