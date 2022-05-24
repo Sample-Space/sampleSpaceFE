@@ -5,12 +5,23 @@ const Carousel = () => {
   return (
     <div className='slider'>
       <div className='slides'>
-        <div id='slide-1'>Hello!</div>
-        <div id='slide-2'>Learn shit!</div>
-        <div id='slide-3'>Do shit!</div>
-        <div id='slide-4'>Now with keyboard!</div>
+        <div id='slide-1'>
+          Welcome to Sample Space, Where the space between learning and grooving is
+          microscopic!
+        </div>
+        <div id='slide-2'>
+          Learn about the crazy sounds of our solar system: the weird, the spooky, and the
+          downright alien music of the spheres
+        </div>
+        <div id='slide-3'>
+          Play the drumkit with your mouse or keyboard using QWER/ASDF
+        </div>
+        <div id='slide-4'>
+          Each sound has info on it's astral origin, learn even more by clicking the handy
+          link!
+        </div>
         <div id='slide-5'>
-          <a id='enter' href='/play'>
+          <a className='nav-button' id='enter' href='/play'>
             Let's Jam
           </a>
         </div>
