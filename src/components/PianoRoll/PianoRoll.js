@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Song, Track, Instrument } from 'reactronica';
+<<<<<<< HEAD
 import PianoRollDisplay from '../PianoRollDisplay/PianoRollDisplay.js';
 import './PianoRoll.css'
 import { sampleKit } from '../../sampleKit.js'
@@ -25,6 +26,12 @@ const PianoRoll = ({ kit }) => {
     null,
     null
   ])
+=======
+
+
+const PianoRoll = () => {
+  
+>>>>>>> c9da7bb (Import reactronica and React)
     return (
       <>
       {kit && (
