@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import './PianoRow.css'
 
 const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
@@ -34,6 +35,13 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
       <>
       {row}
       </>
+=======
+
+const PianoRow = () => {
+    return (
+        <div>
+        </div>
+>>>>>>> e704ce2 (Create PianoRow component)
     )
 }
 
