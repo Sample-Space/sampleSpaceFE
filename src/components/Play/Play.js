@@ -62,8 +62,12 @@ const Play = () => {
       grooveRef
     ]
   )
+
+  const clearSamples = () => {
+    setKit(null)
+  }
+
   useEffect(() => {
-    getKitNames()
     fetchKit('Andromeda%20Strain').then((data) => setKit(data))
   }, [])
 
@@ -71,7 +75,12 @@ const Play = () => {
     if (isFirstLoad.current) {
       isFirstLoad.current = false
     } else {
+      clearSamples()
       fetchKit(selectedKit).then((data) => setKit(data))
+    }
+
+    return () => {
+      console.log('cleared')
     }
   }, [selectedKit])
 
