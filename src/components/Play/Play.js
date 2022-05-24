@@ -11,8 +11,12 @@ const Play = () => {
   const [kitNames, setKitNames] = useState([])
   const [kit, setKit] = useState(null)
   const [currentSample, setCurrentSample] = useState(null)
+<<<<<<< HEAD
   const [selectedKit, setSelectedKit] = useState('Andromeda%20Strain')
 
+=======
+  // Reference Variables
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
   const kickRef = useRef(null)
   const snareRef = useRef(null)
   const hhClosedRef = useRef(null)

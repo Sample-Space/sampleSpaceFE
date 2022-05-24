@@ -1,6 +1,9 @@
 import React from 'react';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
 import './PianoRow.css'
 
 const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
@@ -36,6 +39,7 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
       <>
       {row}
       </>
+<<<<<<< HEAD
 =======
 =======
 import './PianoRow.css'
@@ -80,6 +84,8 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
       {row}
       </>
 >>>>>>> 99266b1 (Create row with buttons)
+=======
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
     )
 }
 

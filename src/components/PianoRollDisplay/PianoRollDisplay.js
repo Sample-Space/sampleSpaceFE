@@ -1,11 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
 import React from 'react';
 import './PianoRollDisplay.css';
 import PianoRow from '../PianoRow/PianoRow.js'
 
 const PianoRollDisplay = ({currentStepIndex, steps, setSteps }) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
     return (
         <section className="roll-display" >
           <PianoRow
@@ -68,6 +74,7 @@ const PianoRollDisplay = ({currentStepIndex, steps, setSteps }) => {
             setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
+<<<<<<< HEAD
 =======
 import React from 'react'
 =======
@@ -150,6 +157,8 @@ const PianoRollDisplay = ({currentStepIndex, steps }) => {
             currentStepIndex={currentStepIndex}
             />
 >>>>>>> 809dc39 (Create PianoRoll template)
+=======
+>>>>>>> 321dd7ac5de101270d0ae7d92eaa356129d40fe2
         </section>
     )
 }
