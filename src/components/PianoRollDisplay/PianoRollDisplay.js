@@ -5,6 +5,7 @@ import './PianoRollDisplay.css';
 import PianoRow from '../PianoRow/PianoRow.js'
 
 const PianoRollDisplay = ({currentStepIndex, steps, setSteps }) => {
+<<<<<<< HEAD
     return (
         <section className="roll-display" >
           <PianoRow
@@ -84,44 +85,68 @@ const PianoRollDisplay = ({currentStepIndex, steps }) => {
 =======
         <section >
           <PianoRow />
+=======
+    return (
+        <section className="roll-display" >
+          <PianoRow
+            currentStepIndex={currentStepIndex}
+            steps={steps}
+            />
+>>>>>>> 0c9e6ef (Pass steps and SetSteps to PianoRow)
           <PianoRow
             name={'Kick'}
             note={'C3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
              />
           <PianoRow
             name={'Snare'}
             note={'C#3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'High Hat 1'}
             note={'D3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'High Hat 2'}
             note={'D#3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'Melody'}
             note={'E3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'One Shot 1'}
             note={'F3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'One Shot 2'}
             note={'F#3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
           <PianoRow
             name={'Texture'}
             note={'G3'}
+            steps={steps}
+            setSteps={setSteps}
             currentStepIndex={currentStepIndex}
             />
 >>>>>>> 809dc39 (Create PianoRoll template)
