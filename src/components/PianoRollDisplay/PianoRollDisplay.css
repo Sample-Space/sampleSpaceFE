@@ -1,4 +1,5 @@
 .roll-display {
-  align-self: flex-end;
   width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(18em, 1fr));
 }
