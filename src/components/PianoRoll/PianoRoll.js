@@ -30,8 +30,31 @@ const PianoRoll = ({ kit }) => {
 
 
 const PianoRoll = () => {
+<<<<<<< HEAD
   
 >>>>>>> c9da7bb (Import reactronica and React)
+=======
+  const [isPlaying, setIsPlaying] - useState(false);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [steps, setSteps] = useState([
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ])
+>>>>>>> 37c86b6 (Initialize react hooks)
     return (
       <>
       {kit && (
