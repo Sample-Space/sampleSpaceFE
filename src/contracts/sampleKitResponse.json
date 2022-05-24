@@ -4,6 +4,25 @@
     "kit": {
       "name": "string",
       "id": "integer",
+      "sequence": [
+        ["string"],
+        null,
+        null,
+        null,
+        ["string"],
+        null,
+        null,
+        null,
+        ["string"],
+        null,
+        null,
+        null,
+        ["string"],
+        null,
+        null,
+        null
+      ],
+      "bpm": "number",
       "elements": {
         "kick": {
           "name": "string",
@@ -68,8 +87,7 @@
           "thumbnail_url": "string",
           "description": "string",
           "info_url": "string"
-        },
-        "groove_url" : "string"
+        }
       }
     }
   }
