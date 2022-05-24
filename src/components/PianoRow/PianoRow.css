@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 
 .active {
   background-color: red;
@@ -13,3 +14,5 @@
   width: 50%;
   height: auto;
 }
+=======
+>>>>>>> 87aa74b (Create Basic Styling for row)
