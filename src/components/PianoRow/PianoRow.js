@@ -1,7 +1,8 @@
 import React from 'react'
 import './PianoRow.css'
 
-const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
+const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) => {
+
   const toggleNote = (note, i) => {
     let newSteps = [...steps]
 
@@ -21,26 +22,30 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps }) => {
     }
   }
 
+  const createButtons = () => {
+    return steps.map((step, index) => {
+      return steps[index] && steps[index].includes(note) ?
+      <div>
+        <button onClick={() => toggleNote(note, index)}
+          key={index}
+          className={`active piano-button ${currentStepIndex === index && isPlaying ? 'playing' : '' }`}>
+        </button>
+      </div>
+      :
+      <div>
+        <button
+          onClick={() => toggleNote(note, index)}
+          key={index}
+          className={`piano-button ${currentStepIndex === index && isPlaying  ? 'playing' : '' }`}>
+        </button>
+      </div>
+    })
+  }
+
   let row = (
     <div className='row'>
-      {/* {name ? <p>{name}</p> : <p> </p>} */}
-      {name
-        ? steps.map((step, index) =>
-            steps[index] && steps[index].includes(note) ? (
-              <button
-                onClick={() => toggleNote(note, index)}
-                key={index}
-                className='active piano-button'
-              ></button>
-            ) : (
-              <button
-                onClick={() => toggleNote(note, index)}
-                key={index}
-                className='piano-button'
-              ></button>
-            )
-          )
-        : steps.map((step, index) => <p key={index}>{index + 1}</p>)}
+    {name ? <div><p>{name}</p></div> : <div><p>Steps</p></div>}
+    {name ? createButtons() : steps.map((step, index) =><p key={index}>{index + 1}</p>)}
     </div>
   )
 

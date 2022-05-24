@@ -1,5 +1,4 @@
 .roll-display {
-  width: 80vw;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(18em, 1fr));
+  width: 80%;
+  height: 50%;
 }
