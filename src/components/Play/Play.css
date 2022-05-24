@@ -23,3 +23,15 @@
   border-top-left-radius: var(--border-rad);
   border-bottom-left-radius: var(--border-rad);
 }
+
+.kit-select {
+  border: 1px solid black;
+  border-radius: var(--border-rad);
+  background-color: #333;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.kit-label {
+  margin-bottom: 0.5rem;
+}

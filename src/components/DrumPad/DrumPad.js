@@ -20,92 +20,76 @@ const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
             keystroke={keystrokes[0]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // imgSrc={sampleKit.kit1[0].img}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[5]}
             setNotes={setNotes}
             note={'F3'}
             id={'one_shot_2'}
-            // imgSrc={sampleKit.kit1[1].img}
             imgSrc={kit.elements.snare.thumbnail_url}
             keystroke={keystrokes[1]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[6]}
             setNotes={setNotes}
             note={'F#3'}
             id={'texture'}
-            // imgSrc={sampleKit.kit1[2].img}
             imgSrc={kit.elements.hh_closed.thumbnail_url}
             keystroke={keystrokes[2]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[7]}
             setNotes={setNotes}
             note={'G3'}
             id={'melody'}
-            // imgSrc={sampleKit.kit1[3].img}
             imgSrc={kit.elements.hh_open.thumbnail_url}
             keystroke={keystrokes[3]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[0]}
             setNotes={setNotes}
             note={'C3'}
             id={'kick'}
-            // imgSrc={sampleKit.kit1[4].img}
             imgSrc={kit.elements.melody.thumbnail_url}
             keystroke={keystrokes[4]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[1]}
             setNotes={setNotes}
             note={'C#3'}
             id={'snare'}
-            // imgSrc={sampleKit.kit1[5].img}
             imgSrc={kit.elements.one_shot_1.thumbnail_url}
             keystroke={keystrokes[5]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[2]}
             setNotes={setNotes}
             note={'D3'}
             id={'hh_closed'}
-            // imgSrc={sampleKit.kit1[6].img}
             imgSrc={kit.elements.one_shot_2.thumbnail_url}
             keystroke={keystrokes[6]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <DrumPadButton
             ref={allRefs[3]}
             setNotes={setNotes}
             note={'D#3'}
             id={'hh_open'}
-            // imgSrc={sampleKit.kit1[7].img}
             imgSrc={kit.elements.texture.thumbnail_url}
             keystroke={keystrokes[7]}
             setCurrentSample={setCurrentSample}
             kit={kit}
-            // onClick={handlePlay}
           />
           <Song>
             <Track>
