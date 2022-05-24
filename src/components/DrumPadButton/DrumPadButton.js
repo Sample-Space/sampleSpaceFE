@@ -10,14 +10,7 @@ const DrumPadButton = forwardRef(
     }
 
     return (
-      <button
-        ref={ref}
-        className='drum-pad'
-        id={id}
-        // onMouseDown={() => setNotes([{ name: note, duration: 4 }])}
-        // onMouseUp={() => setNotes(null)}
-        onClick={onClick}
-      >
+      <button ref={ref} className='drum-pad' id={id} onClick={onClick}>
         <img className='pad-image' src={imgSrc} />
         <p className='keystroke'>{keystroke}</p>
       </button>
