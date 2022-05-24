@@ -8,6 +8,7 @@ const PianoRoll = ({ kit }) => {
 
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
+
   const [steps, setSteps] = useState([
     ['C3'],
     null,
@@ -40,8 +41,7 @@ const PianoRoll = ({ kit }) => {
         setSteps={setSteps}
         isPlaying={isPlaying}
         />
-
-
+      
         <Song isPlaying={isPlaying}
           bpm={180}>
           <Track
@@ -66,6 +66,7 @@ const PianoRoll = ({ kit }) => {
           </Track>
         </Song>
       </section>
+
       )}
       </>
     )

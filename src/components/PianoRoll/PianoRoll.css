@@ -10,3 +10,8 @@
    justify-content: center;
    align-items: center;
  }
+
+
+.playing {
+  box-shadow: 5px 5px 15px 5px #5EA0FF;
+}
