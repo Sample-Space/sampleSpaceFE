@@ -35,7 +35,7 @@ const PianoRoll = ({ kit }) => {
         <PianoRollDisplay
         currentStepIndex={currentStepIndex}
         steps={steps}
-        onclick={(steps) => setSteps(steps)}
+        setSteps={setSteps}
         />
 
 
