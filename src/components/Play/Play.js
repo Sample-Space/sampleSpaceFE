@@ -98,9 +98,9 @@ const Play = () => {
         name='kit-select'
         onChange={(e) => setSelectedKit(e.target.value)}
       >
-        <option value='andromedaStrain'>Andromeda Strain</option>
-        <option value='magnetosphere'>Magnetosphere</option>
-        <option value='apollo11'>Apollo11</option>
+        <option value='Andromeda%20Strain'>Andromeda Strain</option>
+        <option value='Magnetosphere'>Magnetosphere</option>
+        <option value='Apollo%2011'>Apollo 11</option>
       </select>
       {kit && (
         <main className='main-container'>
