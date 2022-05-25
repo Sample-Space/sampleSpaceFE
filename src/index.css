@@ -12,7 +12,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* border: 2px solid green */
 }
 
 html,
@@ -58,7 +57,7 @@ h6 {
 
 a {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 #root,
