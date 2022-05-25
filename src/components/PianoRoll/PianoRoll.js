@@ -43,7 +43,7 @@ const PianoRoll = ({ kit }) => {
         />
       
         <Song isPlaying={isPlaying}
-          bpm={240}>
+          bpm={kit.bpm}>
           <Track
             steps={steps}
             onStepPlay={(stepNotes, index) => {

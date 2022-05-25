@@ -1,6 +1,6 @@
 import "./InfoBox.css";
 
-const InfoBox = ({ currentSample }) => {
+const InfoBox = ({ currentSample, tempo }) => {
   let sampleName;
   let description;
   let link;
@@ -18,7 +18,7 @@ const InfoBox = ({ currentSample }) => {
         <p>{description ? description : ""}</p>
       </div>
       <div className="button-tempo-box">
-        <p>Tempo: 120</p>
+        <p>Tempo: {tempo / 2}</p>
         <a href={link}>
           <button className="more-info-button" disabled={!link}>
             Tell me more!

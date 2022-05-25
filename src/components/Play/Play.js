@@ -140,7 +140,7 @@ const Play = () => {
             ]}
             keystrokes={['Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F']}
           />
-          <InfoBox currentSample={currentSample} />
+          <InfoBox currentSample={currentSample} tempo={kit.kit.bpm} />
 
           <PianoRoll kit={kit.kit} />
         </main>
