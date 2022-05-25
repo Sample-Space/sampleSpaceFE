@@ -1,8 +1,12 @@
 .drum-pad {
   display: flex;
   position: relative;
-  width: 13em;
-  height: 13em;
+  min-width: 150px;
+  min-height: 150px;
+  width: 15vw;
+  height: 15vw;
+  max-width: 175px;
+  max-height: 175px;
   border-radius: var(--border-rad);
   background-color: #333;
   cursor: pointer;
