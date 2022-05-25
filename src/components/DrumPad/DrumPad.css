@@ -27,8 +27,6 @@
   border-radius: var(--border-rad);
   overflow: hidden;
   transition: 0.3s;
-  height: 11vw;
-  width: 11vw;
 }
 
 .keystroke {

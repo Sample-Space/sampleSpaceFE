@@ -6,12 +6,16 @@ import PianoRoll from "../PianoRoll/PianoRoll.js";
 import DrumPad from "../DrumPad/DrumPad";
 import InfoBox from "../InfoBox/InfoBox";
 import { Link } from "react-router-dom";
+import { Loader } from "../Loader/Loader";
+import { Error } from "../Error/Error";
 
 const Play = () => {
   const [kitNames, setKitNames] = useState([]);
   const [kit, setKit] = useState(null);
   const [currentSample, setCurrentSample] = useState(null);
   const [selectedKit, setSelectedKit] = useState("Andromeda%20Strain");
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [loading, setLoading] = useState(true);
   const isFirstLoad = useRef(true);
 
   const kickRef = useRef(null);
@@ -68,17 +72,48 @@ const Play = () => {
   };
 
   useEffect(() => {
-    fetchKit("Andromeda%20Strain").then((data) => setKit(data));
+    fetchKit("Andromeda%20Strain")
+      .then((data) => {
+        setKit(data);
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
+      })
+      .catch((e) => {
+        setLoading(false);
+        setErrorMessage("Sorry, We were unable to get that. Please try again!");
+      });
   }, []);
 
   useEffect(() => {
-    if (isFirstLoad.current) {
-      isFirstLoad.current = false;
-    } else {
+    // if (isFirstLoad.current) {
+    //   isFirstLoad.current = false;
+    // } else {
+      setLoading(true)
       clearSamples();
-      fetchKit(selectedKit).then((data) => setKit(data));
-    }
+      fetchKit(selectedKit)
+        .then((data) => {
+          setKit(data);
+          setTimeout(() => {
+            setLoading(false);
+          }, 1500);
+        })
+        .catch((e) => {
+          setLoading(false);
+          setErrorMessage(
+            "Sorry, We were unable to get that. Please try again!"
+          );
+        });
+    // }
   }, [selectedKit]);
+
+  // useEffect(() => {
+  //   if (loading) {
+  //     setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  //   }
+  // }, [loading]);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyboard);
@@ -87,25 +122,25 @@ const Play = () => {
     };
   }, [handleKeyboard]);
 
-  const getKitNames = () => {
-    fetchKitNames().then((data) => {
-      setKitNames(data);
-    });
-  };
+  // const getKitNames = () => {
+  //   fetchKitNames().then((data) => {
+  //     setKitNames(data);
+  //   });
+  // };
 
-  const getKit = (kitName) => {
-    fetchKit(kitName).then((kitData) => {
-      setKit(kitData);
-    });
-  };
+  // const getKit = (kitName) => {
+  //   fetchKit(kitName).then((kitData) => {
+  //     setKit(kitData);
+  //   });
+  // };
 
-  const changeKit = (selectedKit) => {
-    fetchKit(selectedKit).then((data) => setKit(data.kit));
-  };
+  // const changeKit = (selectedKit) => {
+  //   fetchKit(selectedKit).then((data) => setKit(data.kit));
+  // };
 
   return (
     <div className="main-view">
-      <header className="play-header">
+      <header className="play-header fade-in">
         <Link to="/">
           <img src={logo} alt="Sample Space logo" />
         </Link>
@@ -122,8 +157,12 @@ const Play = () => {
           <option value="Apollo%2011">Apollo 11</option>
         </select>
       </header>
-      {kit && (
-        <main className="main-container">
+      {loading && !errorMessage ? (
+        <Loader />
+      ) : errorMessage ? (
+        <Error error={errorMessage} />
+      ) : (
+        kit && <main className="main-container">
           <DrumPad
             kit={kit.kit}
             setCurrentSample={setCurrentSample}

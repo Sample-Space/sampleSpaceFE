@@ -1,31 +1,13 @@
-.info-box {
+.error {
   display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30vw;
-  height: 29em;
-  background-color: var(--nasa-orange);
-  padding: 1rem;
-  border-top-right-radius: var(--border-rad);
-  border-bottom-right-radius: var(--border-rad);
 }
 
-.sample-name {
-  display: flex;
-}
-
-.description {
-  height: 19em;
-  overflow-y: scroll;
-  font-size: large;
-}
-
-.button-tempo-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.more-info-button {
+.go-back-button {
+  margin-top:1em;
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
@@ -54,16 +36,16 @@
   will-change: box-shadow,transform;
 }
 
-.more-info-button:focus {
+.go-back-button:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.more-info-button:hover {
+.go-back-button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-.more-info-button:active {
+.go-back-button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
