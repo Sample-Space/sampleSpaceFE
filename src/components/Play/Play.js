@@ -105,11 +105,10 @@ const Play = () => {
 
   return (
     <div className='main-view'>
-      <header>
+      <header className="play-header">
         <Link to='/'>
           <img src={logo} alt='Sample Space logo' />
         </Link>
-      </header>
       <label htmlFor='kit-select' className='kit-label'>
         Choose a Kit to Play!
       </label>
@@ -122,6 +121,7 @@ const Play = () => {
         <option value='Magnetosphere'>Magnetosphere</option>
         <option value='Apollo%2011'>Apollo 11</option>
       </select>
+      </header>
       {kit && (
         <main className='main-container'>
           <DrumPad
