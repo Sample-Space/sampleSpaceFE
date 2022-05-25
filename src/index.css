@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Righteous&display=swap');
+
+#root {
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Righteous', cursive;
+  --nasa-orange: #fc3d21;
+  --nasa-blue: #0b3d91;
+  --border-rad: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 2px solid green
+}
+
+html,
+body {
+  height: auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
