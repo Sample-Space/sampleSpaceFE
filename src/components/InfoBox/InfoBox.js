@@ -19,7 +19,7 @@ const InfoBox = ({ currentSample, tempo }) => {
       </div>
       <div className="button-tempo-box">
         <p>Tempo: {tempo / 2}</p>
-        <a href={link}>
+        <a href={link} target="_blank">
           <button className="more-info-button" disabled={!link}>
             Tell me more!
           </button>
