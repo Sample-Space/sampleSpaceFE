@@ -5,14 +5,14 @@
   font-family: 'Righteous', cursive;
   --nasa-orange: #fc3d21;
   --nasa-blue: #0b3d91;
-  --border-rad: 0.5rem;
+  --border-rad: 0.4rem;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 2px solid green
+  /* border: 2px solid green */
 }
 
 html,
@@ -53,6 +53,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  margin: 0;
 }
 
 #root,
