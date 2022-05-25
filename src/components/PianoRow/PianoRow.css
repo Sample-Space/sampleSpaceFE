@@ -2,18 +2,22 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  height: 3em;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  
 }
 
 .active {
   background-color: var(--nasa-orange);
+  /* border-radius: var(--border-rad); */
 }
 
 .row > * {
   width: 100%;
   text-align: center;
   padding: .25rem;
+  /* border-radius: var(--border-rad); */
 }
 
 .piano-button {
