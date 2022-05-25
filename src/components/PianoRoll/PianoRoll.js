@@ -7,26 +7,9 @@ const PianoRoll = ({ kit }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
+console.log(eval(kit.sequence))
 
-
-  const [steps, setSteps] = useState([
-    ['C3'],
-    null,
-    null,
-    null,
-    ['C#3'],
-    null,
-    null,
-    null,
-    ['C3'],
-    null,
-    null,
-    null,
-    ['C#3'],
-    null,
-    null,
-    null
-  ])
+  const [steps, setSteps] = useState(eval(kit.sequence))
     return (
       <>
       {kit && (
