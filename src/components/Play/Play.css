@@ -30,7 +30,7 @@
 .kit-select {
   border: 1px solid black;
   border-radius: var(--border-rad);
-  background-color: #333;
+  background-color: var(--contrast-bg);
   margin-bottom: 1rem;
   color: white;
 }
