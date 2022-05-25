@@ -7,9 +7,12 @@
 
 .main-container {
   display: flex;
+  height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* border: 5px solid grey; */
+  /* border-radius: var(--border-rad); */
   /* width: 100%; */
 }
 

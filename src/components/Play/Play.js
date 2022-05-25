@@ -38,14 +38,14 @@ const Play = () => {
         case 'KeyF':
           hhOpenRef.current.click()
           break
-        case 'KeyQ':
+          case 'KeyQ':
+          melodyRef.current.click()
+          break
+          case 'KeyW':
           oneShotOneRef.current.click()
           break
-        case 'KeyW':
+          case 'KeyE':
           oneShotTwoRef.current.click()
-          break
-        case 'KeyE':
-          melodyRef.current.click()
           break
         case 'KeyR':
           grooveRef.current.click()
@@ -56,9 +56,9 @@ const Play = () => {
       snareRef,
       hhClosedRef,
       hhOpenRef,
+      melodyRef,
       oneShotOneRef,
       oneShotTwoRef,
-      melodyRef,
       grooveRef
     ]
   )
@@ -69,6 +69,7 @@ const Play = () => {
 
   useEffect(() => {
     fetchKit('Andromeda%20Strain').then((data) => setKit(data))
+    
   }, [])
 
   useEffect(() => {
