@@ -1,9 +1,9 @@
-.main-view {
+/* .main-view {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .main-container {
   display: flex;
