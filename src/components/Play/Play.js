@@ -6,6 +6,7 @@ import PianoRoll from "../PianoRoll/PianoRoll.js";
 import DrumPad from "../DrumPad/DrumPad";
 import InfoBox from "../InfoBox/InfoBox";
 import { Link } from "react-router-dom";
+import { Loader } from "../Loader/Loader";
 
 const Play = () => {
   const [kitNames, setKitNames] = useState([]);
@@ -122,7 +123,8 @@ const Play = () => {
           <option value="Apollo%2011">Apollo 11</option>
         </select>
       </header>
-      {kit && (
+      {/* <Loader /> */}
+      {!kit ? <Loader /> : (
         <main className="main-container">
           <DrumPad
             kit={kit.kit}
