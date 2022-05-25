@@ -21,6 +21,7 @@
 }
 
 .play-button {
+  font-size: 2rem;
   text-decoration: none;
   align-items: center;
   appearance: none;
@@ -33,19 +34,13 @@
   display: inline-flex;
   height: 2em;
   justify-content: center;
-  line-height: 1;
-  list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 2rem;
   position: relative;
   text-align: left;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
   will-change: box-shadow, transform;
   margin: 1rem;
 }
