@@ -49,16 +49,34 @@ it('Should have a selector with three options', () => {
  })
 
  it('Should have an info box', () => {
-   cy.get('.info-box h2')
-    .contains('Info Goes Here')
-  .next()
-    .contains('basic summary here')
-  .get('.info-box button')
-    .contains('Tell me more!')
-    .click({force: true})
-  .next()
-    .contains('Tempo')
-  .next()
-    .contains('120')
+   cy.get('.info-box')
+    .contains('Play a Sample to learn more!')
+  cy.get('.info-box')
+    .contains('Tempo: 90')
+  cy.get('.more-info-button')
+ })
+
+
+ it('Info box should display information about the last played sample', () => {
+   cy.fixture('kit').then((kit) => {
+     let elements = Object.keys(kit.kit.elements);
+     const urls = elements.map(element => kit.kit.elements[element].thumbnail_url)
+     let buttons = cy.get('.pad-container')
+
+      buttons.children()
+        .should('have.length', 8)
+
+      buttons.each(button => {
+        cy.wait(500);
+        cy.wrap(button)
+          .children()
+            .first()
+              .invoke('attr', 'src').then($src => {
+                expect(urls).to.include($src)
+              })
+          cy.wrap(button)
+            .click()
+        })
+   })
  })
 })
