@@ -1,33 +1,53 @@
-import { sampleKit } from '../../src/sampleKit.js';
+
+import sampleKit from '../../src/sampleKit.js'
 
 describe('/play endpoint', () => {
  beforeEach('Visit the page', () => {
+
+   cy.intercept('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Strain', {fixture: 'kit'}).as('kit')
    cy.visit('http://localhost:3000/play')
+   cy.wait(500)
  })
 
- it('Should have a header with the Sampls Space logo', () => {
+ it('Should have a header with the Sample Space logo', () => {
    cy.get('header img')
     .should('have.attr', 'src', '/static/media/sample-space-logo.0b8cea83f06fa8ea8674e40bbf7391fb.svg')
  })
 
+it('Should have a selector with three options', () => {
+  cy.get('.kit-select')
+    .children()
+      .first()
+        .contains('Andromeda Strain')
+      .next()
+        .contains('Magnetosphere')
+      .next()
+        .contains('Apollo 11')
+})
+
  it('Should have 8 clickable buttons', () => {
-   const urls = sampleKit.kit1.map(element => element.img)
-   let buttons = cy.get('.pad-container')
+   cy.wait(5000)
+   cy.fixture('kit').then((kit) => {
 
-    buttons.children()
-      .should('have.length', 8)
+     let elements = Object.keys(kit.kit.elements);
+     const urls = elements.map(element => kit.kit.elements[element].thumbnail_url)
+     let buttons = cy.get('.pad-container')
 
-    buttons.each(button => {
-      cy.wrap(button)
-        .children()
-          .first()
-            .invoke('attr', 'src').then($src => {
-              expect(urls).to.include($src)
-            })
+      buttons.children()
+        .should('have.length', 8)
 
+      buttons.each(button => {
         cy.wrap(button)
-          .click()
-      })
+          .children()
+            .first()
+              .invoke('attr', 'src').then($src => {
+                expect(urls).to.include($src)
+              })
+
+          cy.wrap(button)
+            .click()
+        })
+   })
  })
 
  it('Should have an info box', () => {
