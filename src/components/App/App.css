@@ -53,3 +53,16 @@ img {
   box-shadow: 0 0 0.5rem 3px black;
   background-image: url(/public/assets/images/space-bg.jpg);
 }
+
+.fade-in {
+	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
