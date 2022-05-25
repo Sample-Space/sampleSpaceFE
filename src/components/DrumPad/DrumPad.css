@@ -1,11 +1,14 @@
 .drum-pad {
+  display: flex;
   position: relative;
-  width: 13.5vw;
-  height: 13.5vw;
-  border-radius: 10px;
+  width: 13em;
+  height: 13em;
+  border-radius: var(--border-rad);
   background-color: #333;
   cursor: pointer;
   border: 5px solid #333;
+  align-items: center;
+  justify-content: center;
 }
 
 .drum-pad:hover {
@@ -21,15 +24,11 @@
 .pad-image {
   position: relative;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: var(--border-rad);
   overflow: hidden;
   transition: 0.3s;
   height: 11vw;
   width: 11vw;
-}
-
-.pad-container {
-  background-image: url(/public/assets/images/space-bg.jpg);
 }
 
 .keystroke {

@@ -8,31 +8,13 @@ const PianoRoll = ({ kit }) => {
 
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
-
-  const [steps, setSteps] = useState([
-    ['C3'],
-    null,
-    null,
-    null,
-    ['C#3'],
-    null,
-    null,
-    null,
-    ['C3'],
-    null,
-    null,
-    null,
-    ['C#3'],
-    null,
-    null,
-    null
-  ])
+  const [steps, setSteps] = useState(eval(kit.sequence))
     return (
       <>
       {kit && (
         <section className="piano-roll">
-        <button onClick={() => setIsPlaying(!isPlaying)}>
-        {isPlaying ? ' || ' : ' |> '}
+        <button className="play-button" onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? ' STOP ' : ' PLAY '}
         </button>
 
         <PianoRollDisplay
@@ -43,7 +25,7 @@ const PianoRoll = ({ kit }) => {
         />
       
         <Song isPlaying={isPlaying}
-          bpm={180}>
+          bpm={kit.bpm}>
           <Track
             steps={steps}
             onStepPlay={(stepNotes, index) => {

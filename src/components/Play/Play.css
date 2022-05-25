@@ -1,28 +1,28 @@
-.main-view {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .main-container {
   display: flex;
+  height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+}
+
+.play-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pad-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 100%;
+  height: 29em;
   align-items: center;
   gap: 0.5rem;
   background-color: black;
   padding: 1rem;
   border-top-left-radius: var(--border-rad);
   border-bottom-left-radius: var(--border-rad);
+  background-image: url(/public/assets/images/space-bg.jpg);
 }
 
 .kit-select {
@@ -34,5 +34,6 @@
 }
 
 .kit-label {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }

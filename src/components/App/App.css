@@ -1,74 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Righteous&display=swap');
 
-#root {
-  font-family: 'Chakra Petch', sans-serif;
-  font-family: 'Righteous', cursive;
-  --nasa-orange: #fc3d21;
-  --nasa-blue: #0b3d91;
-  --border-rad: 0.5rem;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Righteous', cursive;
-  font-weight: 400;
-  background-color: rgb(31, 31, 31);
-  color: white;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-#root,
-#__next {
-  isolation: isolate;
-}
 
 .app {
-  width: 100vw;
-  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header {
-  width: 100vw;
+.intro-header {
+  width: 100%;
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -81,13 +20,11 @@ header {
 }
 
 .main-view {
-  width: 80vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
-  border: 2px solid black;
-  border-radius: var(--border-rad);
 }
 
 .main-item {
