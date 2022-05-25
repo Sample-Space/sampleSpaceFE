@@ -1,8 +1,6 @@
 
 
 .app {
-  /* width: 100vw; */
-  /* height: 25vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,8 +25,6 @@
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
-  /* border: 2px solid black; */
-  /* border-radius: var(--border-rad); */
 }
 
 .main-item {

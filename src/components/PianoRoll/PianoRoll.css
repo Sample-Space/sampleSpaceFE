@@ -48,7 +48,6 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  /* font-size: 18px; */
 }
 
 .play-button:focus {

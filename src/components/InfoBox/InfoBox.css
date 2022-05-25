@@ -15,7 +15,6 @@
 }
 
 .description {
-  /* display: flex; */
   height: 21em;
   overflow-y: scroll;
   font-size: large;
@@ -54,7 +53,6 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  /* font-size: 18px; */
 }
 
 .more-info-button:focus {

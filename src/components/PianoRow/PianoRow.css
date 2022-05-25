@@ -10,14 +10,12 @@
 
 .active {
   background-color: var(--nasa-orange);
-  /* border-radius: var(--border-rad); */
 }
 
 .row > * {
   width: 100%;
   text-align: center;
   padding: .25rem;
-  /* border-radius: var(--border-rad); */
 }
 
 .piano-button {

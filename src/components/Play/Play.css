@@ -1,19 +1,9 @@
-/* .main-view {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
-
 .main-container {
   display: flex;
   height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* border: 5px solid grey; */
-  /* border-radius: var(--border-rad); */
-  /* width: 100%; */
 }
 
 .play-header {
