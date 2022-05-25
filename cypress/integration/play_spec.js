@@ -4,7 +4,7 @@ import sampleKit from '../../src/sampleKit.js'
 describe('/play endpoint', () => {
  beforeEach('Visit the page', () => {
 
-   cy.intercept('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Strain', {fixture: 'kit'}).as('kit')
+   cy.intercept('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Strain', {fixture: 'kit'})
    cy.visit('http://localhost:3000/play')
    cy.wait(500)
  })
@@ -26,9 +26,7 @@ it('Should have a selector with three options', () => {
 })
 
  it('Should have 8 clickable buttons', () => {
-   cy.wait(5000)
    cy.fixture('kit').then((kit) => {
-
      let elements = Object.keys(kit.kit.elements);
      const urls = elements.map(element => kit.kit.elements[element].thumbnail_url)
      let buttons = cy.get('.pad-container')
@@ -37,13 +35,13 @@ it('Should have a selector with three options', () => {
         .should('have.length', 8)
 
       buttons.each(button => {
+        cy.wait(500);
         cy.wrap(button)
           .children()
             .first()
               .invoke('attr', 'src').then($src => {
                 expect(urls).to.include($src)
               })
-
           cy.wrap(button)
             .click()
         })
