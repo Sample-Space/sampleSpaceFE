@@ -12,7 +12,7 @@ const PianoRoll = ({ kit }) => {
     return (
       <>
       {kit && (
-        <section className="piano-roll">
+        <section className="piano-roll fade-in">
         <button className="play-button" onClick={() => setIsPlaying(!isPlaying)}>
         {isPlaying ? ' STOP ' : ' PLAY '}
         </button>

@@ -140,7 +140,7 @@ const Play = () => {
 
   return (
     <div className="main-view">
-      <header className="play-header">
+      <header className="play-header fade-in">
         <Link to="/">
           <img src={logo} alt="Sample Space logo" />
         </Link>

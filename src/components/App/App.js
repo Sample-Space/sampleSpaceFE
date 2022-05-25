@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className='app'>
+    <div className='app fade-in'>
       <header className="intro-header">
         <Link to='/'>
           <img src={logo} alt='Sample Space logo' />

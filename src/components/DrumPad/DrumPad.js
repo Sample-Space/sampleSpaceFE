@@ -10,7 +10,7 @@ const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
   return (
     <>
       {kit && (
-        <div className="pad-container">
+        <div className="pad-container fade-in">
           <DrumPadButton
             ref={allRefs[4]}
             setNotes={setNotes}
