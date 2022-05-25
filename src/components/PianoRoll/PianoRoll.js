@@ -31,8 +31,8 @@ const PianoRoll = ({ kit }) => {
       <>
       {kit && (
         <section className="piano-roll">
-        <button onClick={() => setIsPlaying(!isPlaying)}>
-        {isPlaying ? ' || ' : ' |> '}
+        <button className="play-button" onClick={() => setIsPlaying(!isPlaying)}>
+        {isPlaying ? ' STOP ' : ' PLAY '}
         </button>
 
         <PianoRollDisplay
@@ -43,7 +43,7 @@ const PianoRoll = ({ kit }) => {
         />
       
         <Song isPlaying={isPlaying}
-          bpm={180}>
+          bpm={240}>
           <Track
             steps={steps}
             onStepPlay={(stepNotes, index) => {
