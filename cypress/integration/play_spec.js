@@ -117,5 +117,92 @@ it('Should have a selector with three options', () => {
     .click()
  })
 
+it('Sequencer should display the steps, kit elements and buttons related for each', () => {
+  cy.get('.roll-display')
+    .contains("Steps");
+
+    cy.get('.roll-display')
+      .contains("1");
+
+    cy.get('.roll-display')
+      .contains("2");
+
+    cy.get('.roll-display')
+      .contains("3");
+
+    cy.get('.roll-display')
+      .contains("4");
+
+    cy.get('.roll-display')
+      .contains("5");
+
+    cy.get('.roll-display')
+      .contains("6");
+
+    cy.get('.roll-display')
+      .contains("7");
+
+    cy.get('.roll-display')
+      .contains("8");
+
+    cy.get('.roll-display')
+      .contains("9");
+
+    cy.get('.roll-display')
+      .contains("10");
+
+    cy.get('.roll-display')
+      .contains("11");
+
+    cy.get('.roll-display')
+      .contains("12");
+
+    cy.get('.roll-display')
+      .contains("13");
+
+    cy.get('.roll-display')
+      .contains("14");
+
+    cy.get('.roll-display')
+      .contains("15");
+
+    cy.get('.roll-display')
+      .contains("16");
+
+    cy.get('.roll-display')
+      .contains("One Shot 2");
+
+    cy.get('.roll-display')
+      .contains("One Shot 1");
+
+    cy.get('.roll-display')
+      .contains("Texture");
+
+    cy.get('.roll-display')
+      .contains("Melody");
+
+    cy.get('.roll-display')
+      .contains("High Hat 2");
+
+    cy.get('.roll-display')
+      .contains("High Hat 1");
+
+    cy.get('.roll-display')
+      .contains("Snare");
+
+    cy.get('.roll-display')
+      .contains('Kick');
+
+      let buttons = cy.get('.piano-button')
+        .each(($button) => {
+          const classList = $button.attr('class');
+          if(classList.includes('active')) {
+            $button.click()
+          } else {
+            $button.click();
+          }
+        })
+
+})
 
 })
