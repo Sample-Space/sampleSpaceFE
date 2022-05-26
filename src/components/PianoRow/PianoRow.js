@@ -1,26 +1,32 @@
-import React from 'react'
-import './PianoRow.css'
+import React from "react";
+import "./PianoRow.css";
 
-const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) => {
-
+const PianoRow = ({
+  name,
+  note,
+  steps,
+  currentStepIndex,
+  setSteps,
+  isPlaying,
+}) => {
   const toggleNote = (note, i) => {
-    let newSteps = [...steps]
+    let newSteps = [...steps];
 
     if (!steps[i]) {
-      newSteps[i] = [note]
-      setSteps(newSteps)
-      return
+      newSteps[i] = [note];
+      setSteps(newSteps);
+      return;
     } else if (steps[i].includes(note)) {
-      newSteps[i] = newSteps[i].filter((nt) => nt !== note)
-      if (newSteps[i].length === 0) newSteps[i] = null
-      setSteps(newSteps)
-      return
+      newSteps[i] = newSteps[i].filter((nt) => nt !== note);
+      if (newSteps[i].length === 0) newSteps[i] = null;
+      setSteps(newSteps);
+      return;
     } else {
-      newSteps[i].push(note)
-      setSteps(newSteps)
-      return
+      newSteps[i].push(note);
+      setSteps(newSteps);
+      return;
     }
-  }
+  };
 
   const createButtons = () => {
     return steps.map((step, index) => {
@@ -41,13 +47,23 @@ const PianoRow = ({ name, note, steps, currentStepIndex, setSteps, isPlaying}) =
   }
 
   let row = (
-    <div className='row'>
-    {name ? <div><p>{name}</p></div> : <div><p>Steps</p></div>}
-    {name ? createButtons() : steps.map((step, index) =><p key={index}>{index + 1}</p>)}
+    <div className="row">
+      {name ? (
+        <div>
+          <p className="row-text">{name}</p>
+        </div>
+      ) : (
+        <div>
+          <p>Steps</p>
+        </div>
+      )}
+      {name
+        ? createButtons()
+        : steps.map((step, index) => <p key={index}>{index + 1}</p>)}
     </div>
-  )
+  );
 
-  return <>{row}</>
-}
+  return <>{row}</>;
+};
 
-export default PianoRow
+export default PianoRow;
