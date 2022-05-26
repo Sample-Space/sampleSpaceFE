@@ -116,7 +116,7 @@ const Play = () => {
       {loading && !errorMessage ? (
         <Loader />
       ) : errorMessage ? (
-        <Error error={errorMessage} />
+        <Error error={errorMessage} noMatch={false} />
       ) : (
         kit && (
           <main className="main-container">
