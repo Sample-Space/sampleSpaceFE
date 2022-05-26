@@ -1,5 +1,5 @@
 .piano-roll {
-  width: 88%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -21,23 +21,22 @@
 }
 
 .play-button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   align-items: center;
   appearance: none;
-  background-color: var(--contrast-bg);
-  border-radius: 4px;
-  border-width: 0;
+  background-color: #ffc107;
+  border-radius: var(--border-rad);
+  border: 3px solid black;
   box-sizing: border-box;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   display: inline-flex;
-  height: 2em;
   justify-content: center;
   overflow: hidden;
-  padding: 2rem;
+  padding: 1px 14px 1px 14px;
   position: relative;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;
@@ -45,18 +44,21 @@
   margin: 1rem;
 }
 
-.play-button:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-}
 
 .play-button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
-    #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .play-button:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+@media screen and (max-width: 740px) {
+  .piano-roll {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
