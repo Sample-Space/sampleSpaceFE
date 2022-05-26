@@ -27,7 +27,7 @@
 
 Sample Space is an educational-minded drum machine that explores the sounds of SPACE, as sampled by NASA. Featuring 3 distinct kits, users can create sequences that delve into the bounds of our known universe and even beyond in an accessible and fun learning environment. 
 
-Users can play these drum kits with either keyboard or mouse, once focused on the main PLAY window. Sample Space also features a discrete sampler, which each step can be toggled on or off with a simple click and comes with hand-crafted sequences to pique the user's imangination!
+Users can play these drum kits with either keyboard or mouse, once focused on the main PLAY window. Sample Space also features a discrete sequencer, which each step can be toggled on or off with a simple click and comes with hand-crafted sequences to pique the user's imagination!
 
 ## Deployment
 This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
