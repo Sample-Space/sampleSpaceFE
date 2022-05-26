@@ -6,6 +6,12 @@
 
 Rec-Me is a sampler application that utilizes the sounds from space provided by NASA. This app is perfect for artists who want to use more exotic samples that are out of this world!
 
+You can watch a video demo by clicking on the picture here!
+<!-- <img src="https://img.youtube.com/vi/gtaMOX2mMrk/0.jpg" alt="alt_text" width="400"> -->
+
+[![Watch the video](https://img.youtube.com/vi/gtaMOX2mMrk/0.jpg)](https://youtu.be/gtaMOX2mMrk)
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gtaMOX2mMrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
 
 
 On page load, the user can play a collection of samples by using the drum kit provided, there are three different kits of samples to choose from Andromeda Strain, Magnetosphere, and Apollo 11. The samples can be played by mouse or keyboard, the associated keys are 'Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F'.
@@ -26,9 +32,10 @@ Our featured stretch technology for this project incorporated the Reactronica li
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-hotpink.svg?style=for-the-badge&logo=CSS3&logoColor=white)
 - ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+- ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
 
 ## Deployment
-This site is deployed on Surge and can be found [here](https://sample-space-fe.herokuapp.com/)!
+This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
 Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
 ## Features
