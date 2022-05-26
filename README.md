@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Sample Space [FE]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[PLAY IT HERE](https://sample-space-fe.herokuapp.com/)
 
-## Available Scripts
+## Contributors
 
-In the project directory, you can run:
+#### Front-End Team:
 
-### `npm start`
+> [Eric Matlock](https://github.com/ermatlock)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> [DéNaje Ferguson](https://github.com/Romeslayer)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> [George Lemmon](https://github.com/GALemmon)
 
-### `npm test`
+> [Jordan Skomal](https://github.com/jskomal)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### Back-End Team:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+>[Mark Ertmer](https://github.com/markertmer)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>[Austin Moore](https://github.com/AustinCMoore)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+>[Ruben Pasillas](https://github.com/hobbiathan)
 
-### `npm run eject`
+## Description
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sample Space is an educational-minded drum machine that explores the sounds of SPACE, as sampled by NASA. Featuring 3 distinct kits, users can create sequences that delve into the bounds of our known universe and even beyond in an accessible and fun learning environment. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Users can play these drum kits with either keyboard or mouse, once focused on the main PLAY window. Sample Space also features a discrete sampler, which each step can be toggled on or off with a simple click and comes with hand-crafted sequences to pique the user's imangination!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
+This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
+Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can watch a video demo by clicking on the thumbnail here!
 
-## Learn More
+[![Watch the video](https://img.youtube.com/vi/gtaMOX2mMrk/0.jpg)](https://youtu.be/gtaMOX2mMrk)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Welcome Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Intro Screen](https://media.giphy.com/media/mXJJJydZ24mMoWw2Vv/giphy.gif)
 
-### Code Splitting
+Learn about our app and press 'Let's Jam' to get started!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Play Page
 
-### Analyzing the Bundle Size
+![Play Screen](https://media.giphy.com/media/q9hg5jHCnh17ubhYew/giphy.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Fully reactive, let your imagination wander and learn about the far reaches of our solar system, click on each sample to learn more, and follow the links in the info box for an even deeper dive!
 
-### Making a Progressive Web App
+![Load Kit](https://media.giphy.com/media/Aqzx7FTeSr425Kpit8/giphy.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This app features three bespoke kits, which were edited for maximum sonic enjoyment, try each and tell us which is your favorite!
 
-### Advanced Configuration
+![Play Sequence](https://media.giphy.com/media/0DWbacImPC1KAxFq18/giphy.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A Sequencer!!! In a web app!!! Get your hip hop space jam on and make the next great astral beat!
 
-### Deployment
+![Tell Me More](https://media.giphy.com/media/JXyFwbWBKWSd01GVUA/giphy.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+There is also a sequencer that comes with a preloaded beat for each kit! Just hit play to start the space jams.
 
-### `npm run build` fails to minify
+Our featured stretch technology for this project incorporated the Reactronica library to control audio as a function of state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Motivation
+- Collaborate as a full stack team to create an application
+- Utilize acceptance and E2E testing of site and asynchronous JavaScript with Cypress
+- Create a multi-page application with React Router
+
+## Technology Stack
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-hotpink.svg?style=for-the-badge&logo=CSS3&logoColor=white)
+- ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+- ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
+- [Reactronica](https://reactronica.com/)
+
+### Future Additions
+
+- Saving of user-generated sequences in local storage
+- Clear focus on the kit-dropdown after switching kits
+- Add users / auth to store/share kits and sequences
+- Ability to download the samples for personal use
+- Ability to download the loop for personal use
+
+[Project spec here](https://mod4.turing.edu/projects/capstone/)
+
+[Turing School of Software and Design's GitHub](https://github.com/turingschool-examples)
