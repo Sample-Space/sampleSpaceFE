@@ -60,7 +60,9 @@ it('Should have a selector with three options', () => {
  it('Info box should display information about the last played sample', () => {
    cy.fixture('kit').then((kit) => {
      let elements = Object.keys(kit.kit.elements);
-     const urls = elements.map(element => kit.kit.elements[element].thumbnail_url)
+     const names = elements.map(element => kit.kit.elements[element].name)
+     const descriptions = elements.map(element => kit.kit.elements[element].description)
+
      let buttons = cy.get('.pad-container')
 
       buttons.children()
@@ -69,13 +71,21 @@ it('Should have a selector with three options', () => {
       buttons.each(button => {
         cy.wait(500);
         cy.wrap(button)
-          .children()
-            .first()
-              .invoke('attr', 'src').then($src => {
-                expect(urls).to.include($src)
-              })
-          cy.wrap(button)
-            .click()
+            .click();
+
+        cy.get('.info-box h2')
+          .then($h2 => {
+            let text = $h2.text();
+            expect(names).to.include(text);
+          })
+
+        cy.get('.description p')
+          .then($p => {
+            let text = $p.text();
+            expect(descriptions).to.include(text);
+          })
+        cy.get('.more-info-button')
+          .click();
         })
    })
  })
