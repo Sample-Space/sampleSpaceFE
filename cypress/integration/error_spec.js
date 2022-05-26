@@ -15,4 +15,18 @@ describe('Error Handling' , () => {
 
     cy.url().should('eq', 'http://localhost:3000/')
   })
+
+  it('If the fetch for play fails, the user is warned and has a way to get home', () => {
+    cy.intercept('https://sample-space-be.herokuapp.com/api/v1/kits/Andromeda%20Strain', {
+      statusCode: 500
+    })
+    cy.visit('http://localhost:3000/play')
+
+    cy.get('.error h1')
+      .contains(`Sorry, we're unable to get that. Please try again!`)
+
+    cy.get(`.go-back-button`)
+      .contains('Home')
+      .click()
+  })
 })
