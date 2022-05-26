@@ -1,5 +1,7 @@
 # Sample Space [FE]
 
+[PLAY IT HERE](https://sample-space-fe.herokuapp.com/)
+
 ## Contributors
 
 #### Front-End Team:
@@ -26,6 +28,10 @@
 Sample Space is an educational-minded drum machine that explores the sounds of SPACE, as sampled by NASA. Featuring 3 distinct kits, users can create sequences that delve into the bounds of our known universe and even beyond in an accessible and fun learning environment. 
 
 Users can play these drum kits with either keyboard or mouse, once focused on the main PLAY window. Sample Space also features a discrete sampler, which each step can be toggled on or off with a simple click and comes with hand-crafted sequences to pique the user's imangination!
+
+## Deployment
+This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
+Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
 You can watch a video demo by clicking on the thumbnail here!
 
@@ -71,10 +77,6 @@ Our featured stretch technology for this project incorporated the Reactronica li
 - ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 - ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
 - [Reactronica](https://reactronica.com/)
-
-## Deployment
-This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
-Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
 ### Future Additions
 
