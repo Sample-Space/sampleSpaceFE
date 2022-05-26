@@ -89,4 +89,15 @@ it('Should have a selector with three options', () => {
         })
    })
  })
+
+ it('Sequencer should play and pause', () => {
+   cy.get('.play-button')
+    .contains('PLAY')
+    .wait(500)
+    .click()
+    .contains('STOP')
+    .click()
+ })
+
+
 })
