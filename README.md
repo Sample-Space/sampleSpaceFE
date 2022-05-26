@@ -35,13 +35,21 @@ You can watch a video demo by clicking on the thumbnail here!
 
 ![Intro Screen](https://media.giphy.com/media/mXJJJydZ24mMoWw2Vv/giphy.gif)
 
+Learn about our app and press 'Let's Jam' to get started!
+
 ## Play Page
 
 ![Play Screen](https://media.giphy.com/media/q9hg5jHCnh17ubhYew/giphy.gif)
 
+Fully reactive, let your imagination wander and learn about the far reaches of our solar system, click on each sample to learn more, and follow the links in the info box for an even deeper dive!
+
 ![Load Kit](https://media.giphy.com/media/Aqzx7FTeSr425Kpit8/giphy.gif)
 
+This app features three bespoke kits, which were edited for maximum sonic enjoyment, try each and tell us which is your favorite!
+
 ![Play Sequence](https://media.giphy.com/media/0DWbacImPC1KAxFq18/giphy.gif)
+
+A Sequencer!!! In a web app!!! Get your hip hop space jam on and make the next great astral beat!
 
 ![Tell Me More](https://media.giphy.com/media/JXyFwbWBKWSd01GVUA/giphy.gif)
 
@@ -62,6 +70,7 @@ Our featured stretch technology for this project incorporated the Reactronica li
 - ![CSS3](https://img.shields.io/badge/CSS3-hotpink.svg?style=for-the-badge&logo=CSS3&logoColor=white)
 - ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 - ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
+- [Reactronica](https://reactronica.com/)
 
 ## Deployment
 This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
