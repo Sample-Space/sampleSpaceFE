@@ -11,7 +11,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"One Shot 2"}
+        name={"S4"}
         note={"F#3"}
         steps={steps}
         setSteps={setSteps}
@@ -19,7 +19,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"One Shot 1"}
+        name={"S3"}
         note={"F3"}
         steps={steps}
         setSteps={setSteps}
@@ -28,7 +28,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
       />
 
       <PianoRow
-        name={"Texture"}
+        name={"S2"}
         note={"G3"}
         steps={steps}
         setSteps={setSteps}
@@ -36,7 +36,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"Melody"}
+        name={"S1"}
         note={"E3"}
         steps={steps}
         setSteps={setSteps}
@@ -44,7 +44,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"High Hat 2"}
+        name={"HH2"}
         note={"D#3"}
         steps={steps}
         setSteps={setSteps}
@@ -52,7 +52,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"High Hat 1"}
+        name={"HH1"}
         note={"D3"}
         steps={steps}
         setSteps={setSteps}
@@ -60,7 +60,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"Snare"}
+        name={"Sn"}
         note={"C#3"}
         steps={steps}
         setSteps={setSteps}
@@ -68,7 +68,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
         isPlaying={isPlaying}
       />
       <PianoRow
-        name={"Kick"}
+        name={"K"}
         note={"C3"}
         steps={steps}
         setSteps={setSteps}
