@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Sample Space
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Rec-Me is a sampler application that utilizes the sounds from space provided by NASA. This app is perfect for artists who want to use more exotic samples that are out of this world!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+On page load, the user can play a collection of samples by using the drum kit provided, there are three different kits of samples to choose from Andromeda Strain, Magnetosphere, and Apollo 11. The samples can be played by mouse or keyboard, the associated keys are 'Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F'.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There is also a sequencer that comes with a preloaded beat for each kit! Just hit play to start the space jams.
 
-### `npm run build`
+Our featured stretch technology for this project incorporated the Reactronica library to control audio as a function of state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Motivation
+- Collaborate as a full stack team to create an application
+- Utilize acceptance and E2E testing of site and asynchronous JavaScript with Cypress
+- Create a multi-page application with React Router
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technology Stack
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-hotpink.svg?style=for-the-badge&logo=CSS3&logoColor=white)
+- ![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
+This site is deployed on Surge and can be found [here](https://sample-space-fe.herokuapp.com/)!
+Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Main Dashboard
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- On page load the user will see a random featured artist and related artist bubbles. Users can also use the search bar to search for a specific artist.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![rec-me-main-dash-demo](https://user-images.githubusercontent.com/92049763/163893175-3c53da44-fb0b-4c1d-a481-b52d40718436.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![rec-me-search-demo](https://user-images.githubusercontent.com/92049763/163893229-b86c48f2-92b4-4b85-870c-5e276f5ee727.gif)
 
-## Learn More
+<details>
+  <summary>Under the Hood</summary>
+  Artist data is fetched from the TasteDive API while the artist images are fetched from the BandsInTown API. On each search submit, a new fetch is triggered.
+</details>
+</br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Single Artist Detail
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When a user clicks on the center featured artist on the main dashboard, they are routed to a page with the information on that specific artist with a unique URL.
 
-### Code Splitting
+![rec-me-single-artist-demo](https://user-images.githubusercontent.com/92049763/163893278-4f503410-1933-4732-8568-44e4d6c4d514.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<details>
+  <summary>Under the Hood</summary>
+  Single artist's are retrieved using the fetch API and interpolating an artist's name into the URL. The site's URL is also changed to reflect that individual artist's name via React Router. Users can bookmark this URL to return to later!
+</details>
+</br>
 
-### Analyzing the Bundle Size
+### Let's play a game!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A user can start the game by pressing the 'Lets play a game' button on the homepage. This switches the main page into game-mode. Users are given a random artist to try
+to reach in 6 moves or less. Users are told how many turns are left and given motivational messages to keep going!
 
-### Making a Progressive Web App
+![rec-me-game-demo](https://user-images.githubusercontent.com/92049763/163893455-68e3e260-4f0b-4410-96aa-22b8b59cdeac.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<details>
+  <summary>Under the Hood</summary>
+ Game state is tracked via the React Context API which allows users to see the turn count and whether they win or lose. We have a custom array for game goal artists that are most likely to be recognized.
+</details>
+</br>
 
-### Advanced Configuration
+### Testing & Accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Rec-Me is fully end-to-end tested with Cypress. URLs are tested and network requests are stubbed. Rec-Me was also designed to be accessible for screen-readers and is fully tab-able.
 
-### Deployment
+## Future Additions
+- Incorporate a favorites mechanism so user's can favorite artists and save them to a list
+- Create customized user playlists
+- Search and filter by genre
+- Improve site accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Credits
+Authors: [Maddie Law](https://github.com/maddielaw) [Eric Matlock](https://github.com/ermatlock) [Jerry Vohrer](https://github.com/Jerry-Vrrr) [Katie Ammon](https://github.com/kammon10)
 
-### `npm run build` fails to minify
+Project spec -> [here](https://frontend.turing.edu/projects/module-3/stretch.html)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Turing School of Software and Design's GitHub](https://github.com/turingschool-examples) -->
