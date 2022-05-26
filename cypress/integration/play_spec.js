@@ -66,7 +66,7 @@ it('Should have a selector with three options', () => {
    })
  })
 
- it.skip('Should have an info box', () => {
+ it('Should have an info box', () => {
    cy.get('.info-box')
     .contains('Play a Sample to learn more!')
   cy.get('.info-box')
