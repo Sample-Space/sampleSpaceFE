@@ -170,28 +170,28 @@ it('Sequencer should display the steps, kit elements and buttons related for eac
       .contains("16");
 
     cy.get('.roll-display')
-      .contains("One Shot 2");
+      .contains("S4");
 
     cy.get('.roll-display')
-      .contains("One Shot 1");
+      .contains("S3");
 
     cy.get('.roll-display')
-      .contains("Texture");
+      .contains("S2");
 
     cy.get('.roll-display')
-      .contains("Melody");
+      .contains("S1");
 
     cy.get('.roll-display')
-      .contains("High Hat 2");
+      .contains("HH2");
 
     cy.get('.roll-display')
-      .contains("High Hat 1");
+      .contains("HH1");
 
     cy.get('.roll-display')
-      .contains("Snare");
+      .contains("Sn");
 
     cy.get('.roll-display')
-      .contains('Kick');
+      .contains('K');
 
       let buttons = cy.get('.piano-button')
         .each(($button) => {
