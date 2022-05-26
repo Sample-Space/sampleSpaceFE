@@ -1,10 +1,31 @@
-# Sample Space
+# Sample Space [FE]
+
+## Contributors
+
+#### Front-End Team:
+
+> [Eric Matlock](https://github.com/ermatlock)
+
+> [DéNaje Ferguson](https://github.com/Romeslayer)
+
+> [George Lemmon](https://github.com/GALemmon)
+
+> [Jordan Skomal](https://github.com/jskomal)
 
 
+#### Back-End Team:
+
+>[Mark Ertmer](https://github.com/markertmer)
+
+>[Austin Moore](https://github.com/AustinCMoore)
+
+>[Ruben Pasillas](https://github.com/hobbiathan)
 
 ## Description
 
-Rec-Me is a sampler application that utilizes the sounds from space provided by NASA. This app is perfect for artists who want to use more exotic samples that are out of this world!
+Sample Space is an educational-minded drum machine that explores the sounds of SPACE, as sampled by NASA. Featuring 3 distinct kits, users can create sequences that delve into the bounds of our known universe and even beyond in an accessible and fun learning environment. 
+
+Users can play these drum kits with either keyboard or mouse, once focused on the main PLAY window. Sample Space also features a discrete sampler, which each step can be toggled on or off with a simple click and comes with hand-crafted sequences to pique the user's imangination!
 
 You can watch a video demo by clicking on the thumbnail here!
 
@@ -46,60 +67,14 @@ Our featured stretch technology for this project incorporated the Reactronica li
 This site is deployed on Heroku and can be found [here](https://sample-space-fe.herokuapp.com/)!
 Alternatively, this repo can be cloned to your local machine. run `npm i` before running `npm start`.
 
-## Features
+### Future Additions
 
-### Main Dashboard
+- Saving of user-generated sequences in local storage
+- Clear focus on the kit-dropdown after switching kits
+- Add users / auth to store/share kits and sequences
+- Ability to download the samples for personal use
+- Ability to download the loop for personal use
 
-<!-- On page load the user will see a random featured artist and related artist bubbles. Users can also use the search bar to search for a specific artist.
+[Project spec here](https://mod4.turing.edu/projects/capstone/)
 
-![rec-me-main-dash-demo](https://user-images.githubusercontent.com/92049763/163893175-3c53da44-fb0b-4c1d-a481-b52d40718436.gif)
-
-![rec-me-search-demo](https://user-images.githubusercontent.com/92049763/163893229-b86c48f2-92b4-4b85-870c-5e276f5ee727.gif)
-
-<details>
-  <summary>Under the Hood</summary>
-  Artist data is fetched from the TasteDive API while the artist images are fetched from the BandsInTown API. On each search submit, a new fetch is triggered.
-</details>
-</br>
-
-### Single Artist Detail
-
-When a user clicks on the center featured artist on the main dashboard, they are routed to a page with the information on that specific artist with a unique URL.
-
-![rec-me-single-artist-demo](https://user-images.githubusercontent.com/92049763/163893278-4f503410-1933-4732-8568-44e4d6c4d514.gif)
-
-<details>
-  <summary>Under the Hood</summary>
-  Single artist's are retrieved using the fetch API and interpolating an artist's name into the URL. The site's URL is also changed to reflect that individual artist's name via React Router. Users can bookmark this URL to return to later!
-</details>
-</br>
-
-### Let's play a game!
-
-A user can start the game by pressing the 'Lets play a game' button on the homepage. This switches the main page into game-mode. Users are given a random artist to try
-to reach in 6 moves or less. Users are told how many turns are left and given motivational messages to keep going!
-
-![rec-me-game-demo](https://user-images.githubusercontent.com/92049763/163893455-68e3e260-4f0b-4410-96aa-22b8b59cdeac.gif)
-
-<details>
-  <summary>Under the Hood</summary>
- Game state is tracked via the React Context API which allows users to see the turn count and whether they win or lose. We have a custom array for game goal artists that are most likely to be recognized.
-</details>
-</br>
-
-### Testing & Accessibility
-
-Rec-Me is fully end-to-end tested with Cypress. URLs are tested and network requests are stubbed. Rec-Me was also designed to be accessible for screen-readers and is fully tab-able.
-
-## Future Additions
-- Incorporate a favorites mechanism so user's can favorite artists and save them to a list
-- Create customized user playlists
-- Search and filter by genre
-- Improve site accessibility
-
-## Credits
-Authors: [Maddie Law](https://github.com/maddielaw) [Eric Matlock](https://github.com/ermatlock) [Jerry Vohrer](https://github.com/Jerry-Vrrr) [Katie Ammon](https://github.com/kammon10)
-
-Project spec -> [here](https://frontend.turing.edu/projects/module-3/stretch.html)
-
-[Turing School of Software and Design's GitHub](https://github.com/turingschool-examples) -->
+[Turing School of Software and Design's GitHub](https://github.com/turingschool-examples)
