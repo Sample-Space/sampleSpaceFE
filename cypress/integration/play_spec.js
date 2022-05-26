@@ -30,6 +30,16 @@ it('Should have a selector with three options', () => {
      let elements = Object.keys(kit.kit.elements);
      const urls = elements.map(element => kit.kit.elements[element].thumbnail_url)
      let buttons = cy.get('.pad-container')
+     const keystrokes = [
+       'Q',
+       'W',
+       'E',
+       'R',
+       'A',
+       'S',
+       'D',
+       'F'
+     ]
 
       buttons.children()
         .should('have.length', 8)
@@ -42,13 +52,21 @@ it('Should have a selector with three options', () => {
               .invoke('attr', 'src').then($src => {
                 expect(urls).to.include($src)
               })
+              cy.wrap(button)
+                .children()
+                  .first()
+                  .next()
+                    .then($p => {
+                      let text = $p.text()
+                      expect(keystrokes).to.include(text)
+                    })
           cy.wrap(button)
             .click()
         })
    })
  })
 
- it('Should have an info box', () => {
+ it.skip('Should have an info box', () => {
    cy.get('.info-box')
     .contains('Play a Sample to learn more!')
   cy.get('.info-box')
