@@ -6,15 +6,23 @@
 
 Rec-Me is a sampler application that utilizes the sounds from space provided by NASA. This app is perfect for artists who want to use more exotic samples that are out of this world!
 
-You can watch a video demo by clicking on the picture here!
-<!-- <img src="https://img.youtube.com/vi/gtaMOX2mMrk/0.jpg" alt="alt_text" width="400"> -->
+You can watch a video demo by clicking on the thumbnail here!
 
 [![Watch the video](https://img.youtube.com/vi/gtaMOX2mMrk/0.jpg)](https://youtu.be/gtaMOX2mMrk)
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gtaMOX2mMrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
+## Welcome Page
 
+![Intro Screen](https://media.giphy.com/media/mXJJJydZ24mMoWw2Vv/giphy.gif)
 
-On page load, the user can play a collection of samples by using the drum kit provided, there are three different kits of samples to choose from Andromeda Strain, Magnetosphere, and Apollo 11. The samples can be played by mouse or keyboard, the associated keys are 'Q', 'W', 'E', 'R', 'A', 'S', 'D', 'F'.
+## Play Page
+
+![Play Screen](https://media.giphy.com/media/q9hg5jHCnh17ubhYew/giphy.gif)
+
+![Load Kit](https://media.giphy.com/media/Aqzx7FTeSr425Kpit8/giphy.gif)
+
+![Play Sequence](https://media.giphy.com/media/0DWbacImPC1KAxFq18/giphy.gif)
+
+![Tell Me More](https://media.giphy.com/media/JXyFwbWBKWSd01GVUA/giphy.gif)
 
 There is also a sequencer that comes with a preloaded beat for each kit! Just hit play to start the space jams.
 
