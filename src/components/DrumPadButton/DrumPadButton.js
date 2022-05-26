@@ -1,4 +1,3 @@
-import './DrumPadButton.css'
 import { forwardRef } from 'react'
 
 const DrumPadButton = forwardRef(

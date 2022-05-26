@@ -15,20 +15,22 @@
 .pad-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 29em;
+  height: 40vh;
+  justify-items: center;
+  align-content: center;
   align-items: center;
-  gap: 0.5rem;
   background-color: black;
-  padding: 1rem;
-  border-top-left-radius: var(--border-rad);
-  border-bottom-left-radius: var(--border-rad);
+  padding: 2rem;
+  gap: 0.5rem;
+  border-top-right-radius: var(--border-rad);
+  border-bottom-right-radius: var(--border-rad);
   background-image: url(/public/assets/images/space-bg.jpg);
 }
 
 .kit-select {
   border: 1px solid black;
   border-radius: var(--border-rad);
-  background-color: #333;
+  background-color: var(--contrast-bg);
   margin-bottom: 1rem;
   color: white;
 }

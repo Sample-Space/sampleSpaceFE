@@ -6,13 +6,13 @@
   --nasa-orange: #fc3d21;
   --nasa-blue: #0b3d91;
   --border-rad: 0.4rem;
+  --contrast-bg: #0e0e0e;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  /* border: 2px solid green */
 }
 
 html,
@@ -58,7 +58,7 @@ h6 {
 
 a {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 #root,
