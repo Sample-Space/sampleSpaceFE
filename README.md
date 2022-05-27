@@ -80,7 +80,9 @@ Our featured stretch technology for this project incorporated the Reactronica li
 
 ### Future Additions
 
-- Saving of user-generated sequences in local storage
+- Saving of user-generated sequences via post to api
+- Upload different sequences on the kit
+- Clear sequence
 - Clear focus on the kit-dropdown after switching kits
 - Add users / auth to store/share kits and sequences
 - Ability to download the samples for personal use
