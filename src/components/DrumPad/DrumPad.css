@@ -8,9 +8,9 @@
   max-width: 175px;
   max-height: 175px;
   border-radius: var(--border-rad);
-  background-color: var(--contrast-bg);
+  background-color: grey;
   cursor: pointer;
-  border: 5px solid var(--contrast-bg);
+  /* border: 0px solid var(--contrast-bg); */
   align-items: center;
   justify-content: center;
 }

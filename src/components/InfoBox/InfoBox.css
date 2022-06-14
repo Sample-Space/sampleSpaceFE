@@ -9,6 +9,26 @@
   border-radius: 0 var(--border-rad) var(--border-rad) 0;
 }
 
+hr {
+  width: 100%;
+  border: none;
+  border-top: solid 2px white;
+}
+
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: rgb(255, 255, 255) #333;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 5px;
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+  background: rgb(255, 255, 255);
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+  background: #333;
+}
+
 .sample-name {
   display: flex;
 }

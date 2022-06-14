@@ -14,9 +14,11 @@ const InfoBox = ({ currentSample, tempo }) => {
       <div className="sample-name">
         <h2>{sampleName ? sampleName : "Play a Sample to learn more!"}</h2>
       </div>
-      <div className="description">
+      <hr></hr>
+      <div className="description styled-scrollbars">
         <p>{description ? description : ""}</p>
       </div>
+      <hr></hr>
       <div className="button-tempo-box">
         <p>Tempo: {tempo / 2}</p>
         <a href={link} target="_blank">
