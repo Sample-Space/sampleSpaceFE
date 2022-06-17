@@ -1,11 +1,11 @@
-import React from "react";
+import {useState} from "react";
 import { Song, Track, Instrument } from "reactronica";
 import { sampleKit } from "../../sampleKit";
 import DrumPadButton from "../DrumPadButton/DrumPadButton";
 import "./DrumPad.css";
 
 const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
-  const [notes, setNotes] = React.useState(null);
+  const [notes, setNotes] = useState(null);
 
   return (
     <>

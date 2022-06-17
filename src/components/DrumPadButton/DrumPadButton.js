@@ -4,6 +4,7 @@ const DrumPadButton = forwardRef(
   ({ setNotes, note, id, imgSrc, keystroke, setCurrentSample, kit }, ref) => {
     const onClick = async () => {
       setCurrentSample(kit.elements[id])
+      
       await setNotes([{ name: note, duration: 4 }])
       await setNotes(null)
     }

@@ -10,13 +10,15 @@ const InfoBox = ({ currentSample, tempo }) => {
     link = currentSample.info_url;
   }
   return (
-    <section className="info-box">
+    <section className="info-box sd">
       <div className="sample-name">
         <h2>{sampleName ? sampleName : "Play a Sample to learn more!"}</h2>
       </div>
-      <div className="description">
-        <p>{description ? description : ""}</p>
+      <hr></hr>
+      <div className="description styled-scrollbars">
+        <p className="description-text">{description ? description : ""}</p>
       </div>
+      <hr></hr>
       <div className="button-tempo-box">
         <p>Tempo: {tempo / 2}</p>
         <a href={link} target="_blank">

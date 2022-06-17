@@ -25,9 +25,12 @@ const PianoRoll = ({ kit }) => {
         />
       
         <Song isPlaying={isPlaying}
-          bpm={kit.bpm}>
+          bpm={kit.bpm}
+          // bpm={90}
+          >
           <Track
             steps={steps}
+            // subdivision = {'8n'}
             onStepPlay={(stepNotes, index) => {
               setCurrentStepIndex(index);
             }}
