@@ -21,8 +21,6 @@
 
 >[Austin Moore](https://github.com/AustinCMoore)
 
->[Ruben Pasillas](https://github.com/hobbiathan)
-
 ## Description
 
 Sample Space is an educational-minded drum machine that explores the sounds of SPACE, as sampled by NASA. Featuring 3 distinct kits, users can create sequences that delve into the bounds of our known universe and even beyond in an accessible and fun learning environment. 
