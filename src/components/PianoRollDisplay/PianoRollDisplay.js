@@ -6,9 +6,7 @@ const PianoRollDisplay = ({ currentStepIndex, steps, setSteps, isPlaying }) => {
   return (
     <section className="roll-display">
       <PianoRow
-        currentStepIndex={currentStepIndex}
         steps={steps}
-        isPlaying={isPlaying}
       />
       <PianoRow
         name={"S4"}
