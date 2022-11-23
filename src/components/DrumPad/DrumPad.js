@@ -1,6 +1,5 @@
 import {useState} from "react";
 import { Song, Track, Instrument } from "reactronica";
-import { sampleKit } from "../../sampleKit";
 import DrumPadButton from "../DrumPadButton/DrumPadButton";
 import "./DrumPad.css";
 
@@ -105,14 +104,6 @@ const DrumPad = ({ setCurrentSample, kit, allRefs, keystrokes }) => {
                   F3: kit.elements.texture.sound_url,
                   "F#3": kit.elements.one_shot_1.sound_url,
                   G3: kit.elements.one_shot_2.sound_url,
-                  // C3: sampleKit.kit1[0].sample,
-                  // 'C#3': sampleKit.kit1[1].sample,
-                  // D3: sampleKit.kit1[2].sample,
-                  // 'D#3': sampleKit.kit1[3].sample,
-                  // E3: sampleKit.kit1[4].sample,
-                  // F3: sampleKit.kit1[5].sample,
-                  // 'F#3': sampleKit.kit1[6].sample,
-                  // G3: sampleKit.kit1[7].sample
                 }}
               />
             </Track>
