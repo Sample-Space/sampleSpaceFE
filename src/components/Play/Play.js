@@ -12,7 +12,7 @@ import { Kits } from "../../lib/KitData";
 const Play = () => {
   const [kit, setKit] = useState(null);
   const [currentSample, setCurrentSample] = useState(null);
-  const [selectedKit, setSelectedKit] = useState("Magnetosphere");
+  const [selectedKit, setSelectedKit] = useState("Andromeda%20Strain");
   const [errorMessage, setErrorMessage] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -104,9 +104,9 @@ const Play = () => {
             name="kit-select"
             onChange={(e) => setSelectedKit(e.target.value)}
           >
+            <option value="Andromeda%20Strain">Andromeda Strain</option>
             <option value="Magnetosphere">Magnetosphere</option>
             <option value="Apollo%2011">Apollo 11</option>
-            <option value="Andromeda%20Strain">Andromeda Strain</option>
           </select>
         </div>
       </header>
