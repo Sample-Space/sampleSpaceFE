@@ -315,9 +315,25 @@ export const Kits = {
   Magnetosphere: {
     name: "Magnetosphere",
     id: 29,
-    sequence:
-      [['C3', 'F#3'], ['D3'], ['D#3'], ['E3'], ['C#3'], null, ['D3'], null, ['C3', 'F#3'], null, ['D3'], null, ['C#3', 'F3'], ['D3'], ['D#3', 'G3'], ['C3']],
-      // Sequence with adjustable durations
+    sequence: [
+      ["C3", "F#3"],
+      ["D3"],
+      ["D#3"],
+      ["E3"],
+      ["C#3"],
+      null,
+      ["D3"],
+      null,
+      ["C3", "F#3"],
+      null,
+      ["D3"],
+      null,
+      ["C#3", "F3"],
+      ["D3"],
+      ["D#3", "G3"],
+      ["C3"],
+    ],
+    // Sequence with adjustable durations
     // sequence: [
     //   [
     //     { name: "C3", duration: .5 },
