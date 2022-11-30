@@ -1,6 +1,6 @@
 # Sample Space [FE]
 
-[PLAY IT HERE](https://sample-space-fe.herokuapp.com/)
+[PLAY IT HERE](https://samplespace.surge.sh/)
 
 ## Contributors
 
